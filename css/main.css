@@ -12,8 +12,8 @@
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* me */
-  height: 80px;
+  margin-top: 10px;
+  height: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -26,13 +26,21 @@
 }
 .etc-wrap {
   display: flex;
-  justify-content: end; /* me */
 
 }
 .etc-wrap div {
   display: flex;
 }
 
+.hd1{
+  
+  justify-content: space-between;
+}
+.header1-left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* 1. 로고 */
 
 .logo-wrap a {
@@ -42,176 +50,125 @@
 }
 
 /* 2. 카테고리 */
-.category-wrap {
-  display: block;
-}
-.category-box {
+.box-header1-category ul{
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.category-wrap a {
-  position: relative; /*  */
-
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 1;
+.box-header1-category ul li{
+  display: inline-block;
   padding: 21px 5px 15px;
   margin: 0 10px;
-
-  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
 }
-.category-wrap a :hover {
+.box-header1-category ul li a{
+  letter-spacing: -1px;
+  color: #2f3438;
+}
+.box-header1-category ul li a:hover{
   color: #35c5f0;
 }
 
-.category-wrap a span {
-  display: inline-block;
-  padding: 4px;
-  border-radius: 3px;
-  margin: -4px;
-}
-
-/* 3. 서치 등등 etc */
-.etc-wrap {
-  position: relative;
-  align-items: center;
-}
-/* 3-1. 서치 박스 */
-.search-wrap {
-  flex-direction: column;
-  min-width: 0;
-  margin-right: 9px;
-  flex: 1 1 0px;
-}
-.search-box {
-  position: relative;
+/* 3. 글쓰기 ------------------ */
+.header1-right{
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-  flex: 1 1 0px;
-  min-width: 0;
-  margin-right: 9px;
-}
-.search {
-  display: inline-flex;
+  justify-content: center;
   align-items: center;
+}
 
-  box-sizing: border-box; /* ?? */
-  border: 1px solid #dadde0;
+/* 3-1. 서치박스 */
+.wrap-search{
+  display: flex;
+  margin-right: 20px;
+}
+.box-magnifier{
+  display: inline-flex;
+  border: 1px solid #DADDE0;
   border-radius: 4px;
+  width: 100%;
   height: 40px;
+  align-items: center;
   padding: 0 14px;
-  width: 100%;
 }
-
-.search-box :hover {
-  background-color: #f9f9f9;
-}
-.search-box span {
-  display: inline-block;
-
-  font-size: 24px;
-  line-height: 1;
-  vertical-align: middle;
-  padding-right: 6px;
+.icon-magnifier{
   color: #828c94;
-}
-.search-box input {
-  width: 100%;
-}
-
-.search-input {
-  display: inline-block;
-  margin: 0;
-  border: none;
-  background: none;
-  height: 100%;
-  color: #2f3438;
-  font-size: 16px;
-  line-height: 24px;
-  padding-right: 6px;
-}
-
-.search-wrap input {
-  border: none;
-  width: 100%;
-}
-/* 3-2. 카트 박스 */
-.cart-a {
-  display: inline-block;
-  position: relative;
-  margin: 9px 1px;
   padding: 6px;
-
-  color: #2f3438;
-  line-height: 0;
-  outline: none;
-  /* 임의로 지정한 돋보기 --- ※*/
-  border: 1px solid rgb(182, 182, 182);
-  height: 30px;
-  border-radius: 4px;
-  background-color: rgb(182, 182, 182);
-}
-.cart-a :hover {
-  background-color: #2fa0c2;
-}
-
-.cart-a span {
   display: inline-block;
 }
-
-/*  -- */
-.login-wrap {
-  display: flex;
-  align-items: center;
-
-  margin-left: 16px;
-  font-size: 14px;
-}
-.write-wrap {
-  display: flex;
-  align-items: center;
-}
-
-/* 3-3. 로그인 / 회원가입 박스 */
-.login-regist-box {
-  display: flex;
-  margin: 0 10px 0 8px;
-
-  height: 40px;
-}
-
-/* 3-4. 글쓰기 박스 */
-.write-box {
-  line-height: 0;
-}
-
-.write-button {
-  display: inline-flex;
-  align-items: center;
-  /* 버튼 */
-  padding: 0 16px;
+.box-magnifier input{
   border: none;
+  width: 100%;
+  background-color: transparent;
+}
+.box-magnifier:hover{
+  background-color: rgb(251, 251, 251);
+}
+.box-magnifier input::placeholder{
+  font-size: 15px;
+  color: rgb(203, 203, 203);
+}
+
+/* 3-2. 카트 아이콘  */
+.wrap-cart{
+  display: inline-block;
+}
+.cart{
+  width: 100%;
+  padding: 10px;
   border-radius: 4px;
-  width: auto;
-  height: 40px;
-  outline: none;
-  overflow: hidden;
-  color: #ffffff;
-  background-color: #35c5f0;
+  background-color: #c7dff2;
 }
-.write-box :hover {
-  background-color: #2fa0c2;
+
+/* 3-3. 로그인 / 회원가입 / 고객센터 */
+.wrap-regist{
+  display: flex;
+  align-items: center;
+  margin: 0 10px 0 8px;
 }
-.write-span {
-  margin-right: 6px;
-  /* 밑에두갠 뭐지 */
-  vertical-align: center;
+.wrap-regist a{
+  font-size: 13px;
+  padding: 10px;
+  color: #2f3438;
   white-space: nowrap;
+
 }
+.line{
+  border-left: 1px solid #DADDE0;
+  height: 20px;
+}
+
+/* 3-4. 글쓰기 버튼 */
+  .btn-write{
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background-color: #35c5f0;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 16px;
+  }
+  .btn-write:hover{
+    background-color: #2fa0c2;
+  }
+  .spn-write1{
+    color: white;
+    margin-right: 8px;
+  }
+  .spn-write2{
+    color: white;
+  }
+
+
+
 
 /* ----헤더2 ------------------------------------------- */
 .header-wrapper {
   display: flex;
+  align-items: center;
+  
   padding: 0px;
 }
 
@@ -226,11 +183,13 @@
 .header-right {
   display: block;
   margin-left: 10px;
+  
   /*  */
 
 }
 
 /* header left --------*/
+
 .header-left nav {
   overflow: hidden;
   display: flex;
@@ -240,7 +199,9 @@
   height: 51px;
   white-space: nowrap;
 }
-
+.category-nav{
+  white-space: nowrap;
+}
 .category {
   margin: 0 5px;
   display: block;
@@ -270,37 +231,54 @@
   font-weight: 700;
 }
 .category-div :hover {
-  color: #2fa0c2;
+  color: #35c5f0;
 }
 
-/* 차트   */
-.chart-wrapper {
-  position: relative; /* 요소 자기 자신을 기준으로 배치 */
+/* 차트  ~~~~~~~~~~~~~~~~~~~~~~~~~` */
+.chart-right{
+  background-color: white;
+  margin-left: 10px;
 }
-.chart-forScript {
-  line-height: 0;
-  
-}
-/* box ---- */
-.chart-box { /* 여기서 정렬해야하는데 안먹음;;  */
+.chart-wrapper{
+  width: 200px;
   display: flex;
-  align-items: center; /* 세로를 가운데로  */
-  justify-content: space-between; /* 요소간 일정 간격 */
-  width: 100%;
-}
-.chart-textBox{
-  position: relative;
-  margin-right: 6px;
-/*   overflow: hidden; */
+  align-items: center;
 }
 
-.chart-box button{
-  background: none;
+.box-chart{
+  margin-right: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+}
 
-  padding: 6px;
-  border: none;
+/* --- */
+.chart-number{
+  font-weight: 1000;
+}
+.chart-tag{
+  font-size: 12px;
+  font-weight: 700;
+  color: #2fa0c2;
+  padding: 0px 2px;
+}
+.btn-chart{
   display: block;
+  color: #828C94;
+  border: none;
+  background-color: transparent;
+  padding: 6px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 본문 -======================================================================= */
@@ -478,9 +456,16 @@
 }
 
 .box-best-category ul li{
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px solid gray;
+  font-size: 13px;
+  padding: 9px;
+  margin-right: 5px ;
+  border-radius: 15px;
+  background-color: #f7f9fa;
+  white-space: nowrap;
+}
+.box-best-category ul li:hover{
+  background-color: #35c5f0;
+  color: white;
 }
 
 
@@ -591,13 +576,19 @@ footer{
   margin: 0px 50px;
 }
 
+
+
+
+
 /* 푸터2 ---------------- */
 .wrap-footer2{
   display: grid;
-  gap: 20px 10px;
+  gap: 20px 50px;
   grid-auto-flow: column;
   grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, min-content);
+  margin-right: 10px;
+
 }
 .wrap-footer2 a{
   display: inline-block;
@@ -612,6 +603,9 @@ footer{
   font-weight: 700;
   
 }
+
+
+
 
 /* 푸터3 -------------- */
 .wrap-footer3{
@@ -637,8 +631,62 @@ footer{
 
 .footer3-info-5{
   padding: 10px 0px;
+  margin-bottom: 5px;
 }
 .footer3-info-5 a{
   color: rgb(130, 140, 148);
   margin-right: 10px;
+}
+
+#footer3-bold{
+  font-weight: 700;
+  color: rgb(130, 140, 148);
+
+}
+#footer3-email{
+  color: rgb(130, 140, 148);
+}
+
+/* 푸터3 박스 3개  */
+.footer3-info-3{
+  display: flex;
+  margin-bottom: 10px;
+}
+.box-footerlogo{
+  border: 1px solid rgb(211, 212, 214);
+  color: rgb(130, 140, 148);
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.box-footerlogo{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  line-height: 12px;
+}
+.box-footerlogo img{
+  width: 30px;
+  margin-right: 5px;
+}
+.box-footerlogo .fl{
+  padding: 0px 40px;
+  
+}
+
+
+
+
+
+.footer3-info-4{
+  line-height: 15px;
+  display: inline-block;
+  white-space: wrap;
+  font-size: 10px;
+  margin: 10px 0px;
+  
+}
+.footer3-info-6{
+  font-size: 10px;
+  font-weight: 400;
 }
