@@ -1,0 +1,377 @@
+#wrapper {
+  padding-top: 40px;
+  width: calc(100% - 30px);
+  margin: 0 auto;
+  font-size: 15px;
+}
+.wrapper-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 40px;
+}
+/* 전체 사이즈 */
+@media (min-width: 768px) {
+  .content {
+    width: 360px;
+  }
+}
+.content{margin: 0 auto; padding: 60px 0; } /* margin auto */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 회원가입  -------------------------------*/
+.title{
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* 다른 방법으로 로그인 --------------------------------------- */
+.other-wrap{
+  border-bottom: 1px solid #ededed;
+  margin: 30px 0;
+
+}
+.otherLogin-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text{
+  margin: 15px 0;
+  color: #757575;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+.otherLogin-box a{
+  margin: 0 10px;
+}
+
+/* 정보입력 form -------------------------------------------- */
+.info-form{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* 3.1 이메일 */
+
+.email-wrapper label{
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2f3438;
+  letter-spacing: -0.3px;
+  word-break: keep-all;
+
+}
+.email-input-wrapper{
+  display: flex;
+  align-items: center;
+}
+.email-input-wrapper input{
+  display: block;
+  padding: 0 15px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #424242;
+}
+.golbang{
+  padding: 4px;
+  color: #dbdbdb;
+  text-align: center;
+  line-height: 40px;
+
+}
+/* 셀렉트 ---  */
+.email-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.email-input-wrapper select{
+  display: block;
+  height: 40px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  color: #424242;
+  line-height: 40px;
+
+}
+input::placeholder{
+  padding: 5px;
+  color: #b2b2b2;
+}
+
+select:optional{ /* 옵션 수정 */
+  padding: 4px;
+  color: #7e7e7e;
+}
+option{
+  font-weight: normal;
+  display: block;
+  padding: 0px 2px 1px;
+  white-space: nowrap;
+  min-height: 1.2em;
+}
+
+.arr-button{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background: none;
+  border: none;
+  font-size: 0;
+  cursor: default;
+  color: rgba(0, 0, 0, .3)
+}
+
+/* 3-2. 이메일 인증하기 버튼   */
+.email-button{
+  padding-top: 7px;
+  margin-bottom: 30px;
+}
+.email-button button{
+  width: 100%;
+  height: 45px;
+  border-radius: 4px;
+  background: #f7f8fa;
+  color: #c2c8cc;
+  border: 1px solid #dadce0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  
+}
+
+/* 비밀번호------------------------------------------------------------------------------------ */
+
+.Pwrapper{
+  margin-bottom: 30px;
+
+}
+.Pwrapper label{
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2f3438;
+  letter-spacing: -0.3px;
+  word-break: keep-all;
+
+}
+
+.notice-text{
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(130, 140, 148);
+  letter-spacing: -0.3px;
+}
+
+.inputForm input{
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 21px;
+
+}
+
+
+
+
+/*  약관동의 -----------------------------------------------------------------*/
+
+.agreeFormWrap{
+  padding: 18px;
+  border: 1px solid rgb(234, 237, 239); ;
+}
+
+.mainSpan{
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: rgb(47, 52, 56);
+}
+.subSpan{
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(130, 140, 148);
+}
+.agreeBox hr{
+  padding: 0px;
+  height: 1px;
+  border: none;
+  background-color: rgb(234, 237, 239);
+  margin: 18px 0px;
+}
+
+/* --------- */
+.sub-mainSpan{
+  margin-left: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  color: rgb(47, 52, 56);
+  font-weight: normal;
+}
+/* 이거 원래는 after로 넣어줘야함  */
+.sub-subSpan{
+  content: "(필수)";
+  display: inline-block;
+  padding-left: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(0, 159, 206);
+  font-weight: normal;
+
+}
+.mar {
+  margin-top: 20px;
+}
+.check-aTag{
+  margin-left: 8px;
+}
+.check{
+  display: flex;
+  align-items: center;
+}
+
+/* 체크박스 디자인 ------------------------------------ */
+.check [type = 'checkbox']{
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  transition: 300ms;
+  cursor: pointer;
+  appearance: none;
+
+  &::before{
+    content: '';
+    display: block;
+    width: inherit; height: inherit; border-radius: inherit; 
+    background-size: contain;
+    background-color: transparent;
+    border: 1px solid rgb(210, 210, 210);
+  }
+  
+  &:checked{
+    background-color: #35c5f0;
+    border: 1px solid transparent;
+  }
+
+/*   &:checked::before{
+  }
+ */
+}
+
+
+.check label{
+  display: flex;
+  align-items: center;
+}
+
+
+/*  3-7. 로봇이 아닙니다 -------------------------------------------------- */
+.rc-anchor-container{
+  border: 1px solid #d3d3d3;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 78px;
+}
+
+
+.regist-button button{
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #35c5f0;;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+}
+.regist-button button:hover{
+  background-color: #38a7c9;;
+}
+
+
+/* 이미 아이디가 있으신가요? ---------------------------------------------------------------------------------- */
+.another{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.another span{
+  color: #424242;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+.another a{
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+  display: inline-block;
+  color: #424242;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

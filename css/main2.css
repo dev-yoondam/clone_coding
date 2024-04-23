@@ -1,0 +1,487 @@
+#wrapper {
+  width: 1136px;
+  text-decoration: none;
+  margin: auto;
+  font-size: 15px;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* me */
+  height: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo-wrap {
+  margin-right: 35px;
+}
+.category-wrap {
+  display: flex;
+}
+.etc-wrap {
+  display: flex;
+  justify-content: end; /* me */
+
+}
+.etc-wrap div {
+  display: flex;
+}
+
+/* 1. 로고 */
+
+.logo-wrap a {
+  color: #212629;
+  height: 30px;
+  padding: 4px;
+}
+
+/* 2. 카테고리 */
+.category-wrap {
+  display: block;
+}
+.category-box {
+  display: flex;
+}
+.category-wrap a {
+  position: relative; /*  */
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1;
+  padding: 21px 5px 15px;
+  margin: 0 10px;
+
+  color: black;
+}
+.category-wrap a :hover {
+  color: #35c5f0;
+}
+
+.category-wrap a span {
+  display: inline-block;
+  padding: 4px;
+  border-radius: 3px;
+  margin: -4px;
+}
+
+/* 3. 서치 등등 etc */
+.etc-wrap {
+  position: relative;
+  align-items: center;
+}
+/* 3-1. 서치 박스 */
+.search-wrap {
+  flex-direction: column;
+  min-width: 0;
+  margin-right: 9px;
+  flex: 1 1 0px;
+}
+.search-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 1 0px;
+  min-width: 0;
+  margin-right: 9px;
+}
+.search {
+  display: inline-flex;
+  align-items: center;
+
+  box-sizing: border-box; /* ?? */
+  border: 1px solid #dadde0;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 14px;
+  width: 100%;
+}
+
+.search-box :hover {
+  background-color: #f9f9f9;
+}
+.search-box span {
+  display: inline-block;
+
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: middle;
+  padding-right: 6px;
+  color: #828c94;
+}
+.search-box input {
+  width: 100%;
+}
+
+.search-input {
+  display: inline-block;
+  margin: 0;
+  border: none;
+  background: none;
+  height: 100%;
+  color: #2f3438;
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 6px;
+}
+
+.search-wrap input {
+  border: none;
+  width: 100%;
+}
+/* 3-2. 카트 박스 */
+.cart-a {
+  display: inline-block;
+  position: relative;
+  margin: 9px 1px;
+  padding: 6px;
+
+  color: #2f3438;
+  line-height: 0;
+  outline: none;
+  /* 임의로 지정한 돋보기 --- ※*/
+  border: 1px solid rgb(182, 182, 182);
+  height: 30px;
+  border-radius: 4px;
+  background-color: rgb(182, 182, 182);
+}
+.cart-a :hover {
+  background-color: #2fa0c2;
+}
+
+.cart-a span {
+  display: inline-block;
+}
+
+/*  -- */
+.login-wrap {
+  display: flex;
+  align-items: center;
+
+  margin-left: 16px;
+  font-size: 14px;
+}
+.write-wrap {
+  display: flex;
+  align-items: center;
+}
+
+/* 3-3. 로그인 / 회원가입 박스 */
+.login-regist-box {
+  display: flex;
+  margin: 0 10px 0 8px;
+
+  height: 40px;
+}
+
+/* 3-4. 글쓰기 박스 */
+.write-box {
+  line-height: 0;
+}
+
+.write-button {
+  display: inline-flex;
+  align-items: center;
+  /* 버튼 */
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  width: auto;
+  height: 40px;
+  outline: none;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #35c5f0;
+}
+.write-box :hover {
+  background-color: #2fa0c2;
+}
+.write-span {
+  margin-right: 6px;
+  /* 밑에두갠 뭐지 */
+  vertical-align: center;
+  white-space: nowrap;
+}
+
+/* ----헤더2 ------------------------------------------- */
+.header-wrapper {
+  display: flex;
+  padding: 0px;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between; /* 요소들 사이에 일정 간격 */
+  overflow: hidden;
+
+  height: 51px;
+  
+}
+.header-right {
+  display: block;
+  margin-left: 10px;
+  /*  */
+
+}
+
+/* header left --------*/
+.header-left nav {
+  overflow: hidden;
+  display: flex;
+  /* align-items : 세로선상의 정렬방식 */
+  align-items: stretch; /* 요소들을 컨테이너에 맞도록 세로로 늘림 */
+
+  height: 51px;
+  white-space: nowrap;
+}
+
+.category {
+  margin: 0 5px;
+  display: block;
+
+}
+.category a {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 12px 6px;
+
+  
+  
+}
+.category-div {
+  padding: 4px;
+  margin-top: -4px;
+  margin-bottom: -4px;
+}
+.category-p {
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  color: #2f3438;
+  font-weight: 700;
+}
+.category-div :hover {
+  color: #2fa0c2;
+}
+
+/* 차트   */
+.chart-wrapper {
+  position: relative; /* 요소 자기 자신을 기준으로 배치 */
+}
+.chart-forScript {
+  line-height: 0;
+  
+}
+/* box ---- */
+.chart-box { /* 여기서 정렬해야하는데 안먹음;;  */
+  display: flex;
+  align-items: center; /* 세로를 가운데로  */
+  justify-content: space-between; /* 요소간 일정 간격 */
+  width: 100%;
+}
+.chart-textBox{
+  position: relative;
+  margin-right: 6px;
+/*   overflow: hidden; */
+}
+
+.chart-box button{
+  background: none;
+
+  padding: 6px;
+  border: none;
+  display: block;
+}
+
+
+/* 본문 -======================================================================= */
+
+.container{
+  margin-top: 30px;
+}
+
+/* 1. 메인배너 */
+.main-banner{
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 0px 60px;
+  background-color: beige;
+}
+.main-banner-in{
+  max-width: 1256px;
+  display: flex;
+}
+
+/* 1-1 왼쪽배너 */
+.left-banner{
+  flex: 1 1 847px;
+  display: inline-block;
+}
+.left-banner section{border-radius: 4px;}
+.left-banner section a img{width: 100%; height: 100%;}
+
+
+/* 1-2 오른쪽배너 */
+
+.right-banner{
+  margin-left: 20px;
+  display: inline-block;
+}
+.right-banner section  {display: flex; align-items: stretch;}
+.right-banner section a {display: flex; align-items: stretch;}
+.right-banner section a img {height: 100%; width: 200px;}
+
+
+/* 메인 카테고리  */
+.main-category-in{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 40px;
+}
+
+.category-box{
+  text-align: center;
+}
+.category-box a{
+  display: flex;
+  flex-direction: column;
+}
+.category-box a img{max-width: 88px;}
+.category-box a span{margin-top: 8px; font-size: 16px; line-height: 20px;}
+
+
+/* 3. 이런 사진 찾고있나요? --------------------------------------------------------- */
+
+.main-searchPhoto{
+  margin: 40px auto;
+}
+
+/* 3-1. 텍스트영역  */
+.looking-text-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;;
+  line-height: 1;
+}
+
+.looking-titles-wrap{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.looking-mainT{
+  margin-top: 4px;
+}
+.looking-mainT strong{
+  overflow: hidden;
+  display: inline-block;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgb(47, 52, 56);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.looking-subT span{
+  overflow: hidden;
+  display: inline-block;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(47, 52, 56);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  
+}
+
+.etcText-wrap button{
+  display: inline-block;
+  margin: 0px; padding: 0px; border: none; background: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(53, 197, 240);
+  cursor: pointer;
+}
+
+/* 3-2. 사진목록                      */
+
+.photoSome{
+  position: relative;
+}
+.photoSome a img{
+  border-radius: 4px;
+} 
+.util {
+  position: absolute;
+  bottom: 0; /* 바닥에 붙임 */
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.util .profile-nickname{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 8px;
+}
+.util-profileImage{
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 4px;
+  
+}
+.util-profileImage img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.util span{
+  display: inline-block;
+
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700px;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100px;
+}
+
+.util .bookmark-wrapper{
+  position: relative;
+ 
+}
+.util .bookmark-wrapper > div {
+  display: flex; /* 내부의 div를 가로로 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+}
+.util .bookmark-wrapper button {
+  margin-left: 8px; 
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main2.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>메인페이지 2트</title>
+    <style>
+     @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+      body, button, input, footer, span{
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div id="header">
+          <!-- 1. 로고 -->
+          <div class="logo-wrap">
+            <!-- 복붙 -->
+            <div class="logo">
+              <a href="https://ohou.se/">
+                <svg
+                  class="css-1qa5cvy"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="74"
+                  height="30"
+                  fill="none"
+                  viewBox="0 0 74 30"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M14.2 25.17H9.28V20.7a1.45 1.45 0 00-2.9 0v4.47H1.44a1.45 1.45 0 100 2.9H14.2a1.45 1.45 0 000-2.9zM4.5 9.15c0-4.6 2.08-5.28 3.33-5.28 1.24 0 3.33.69 3.33 5.28v.36c0 4.6-2.09 5.28-3.33 5.28-1.25 0-3.34-.69-3.34-5.28v-.36zm3.33 8.54c3.84 0 6.23-3.13 6.23-8.18v-.36c0-5.05-2.39-8.18-6.23-8.18-3.85 0-6.24 3.13-6.24 8.18v.36c0 5.05 2.39 8.18 6.24 8.18zM33.37 10.35H17.81a1.45 1.45 0 000 2.9h15.56a1.45 1.45 0 100-2.9zM31.82 25.84c-7.08 1.84-9.45.8-10.14.26-.45-.35-.65-.8-.65-1.48v-.87h10.25c.8 0 1.46-.65 1.46-1.45v-5.08c0-.8-.65-1.45-1.46-1.45h-11.7a1.45 1.45 0 100 2.9h10.25v2.18H19.57c-.8 0-1.45.65-1.45 1.45v2.32a4.6 4.6 0 001.78 3.78c1.2.92 2.94 1.39 5.21 1.39 2.05 0 4.54-.38 7.44-1.13a1.45 1.45 0 10-.73-2.82zM20.3 7.83h10.82a1.45 1.45 0 100-2.9h-9.36V1.44a1.45 1.45 0 10-2.9 0v4.93c0 .8.65 1.45 1.45 1.45z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <rect width="3" height="15" x="70" fill="currentColor" rx="1.5"></rect>
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M64.5 13.28a1.45 1.45 0 002.73-1c-.05-.13-1-2.68-3.38-4.5l3.7-4.1a1.45 1.45 0 00-1.09-2.42h-9.05a1.45 1.45 0 100 2.9h5.8l-6.88 7.64a1.45 1.45 0 102.16 1.95l3.41-3.8a8.02 8.02 0 012.6 3.33zM69.56 26.52h-7.01a.82.82 0 01-.82-.82v-1.95h8.65v1.95c0 .45-.37.82-.82.82zm2.27-9.37c-.8 0-1.45.65-1.45 1.45v2.25h-8.65V18.6a1.45 1.45 0 10-2.9 0v7.1a3.72 3.72 0 003.72 3.72h7.01a3.72 3.72 0 003.72-3.72v-7.1c0-.8-.65-1.45-1.45-1.45zM42.46 3.87c2.22 0 2.33 4.24 2.33 5.08 0 .85-.11 5.09-2.33 5.09-2.21 0-2.32-4.24-2.32-5.09 0-.84.11-5.08 2.32-5.08zm0 13.07c1.76 0 3.23-.93 4.14-2.62.71-1.34 1.1-3.2 1.1-5.37 0-2.16-.39-4.02-1.1-5.36A4.59 4.59 0 0042.46.97c-1.75 0-3.22.93-4.13 2.62-.72 1.34-1.1 3.2-1.1 5.36 0 2.17.38 4.03 1.1 5.37a4.59 4.59 0 004.13 2.62z"
+                    clip-rule="evenodd"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M51.4.49c-.8 0-1.45.65-1.45 1.45v17.78c-1.93.6-5.75 1.12-10.38 1.12h-2.2a1.45 1.45 0 000 2.91h2.2c2.64 0 7.21-.23 10.38-1.02v4.84a1.45 1.45 0 002.9 0V1.94c0-.8-.65-1.45-1.45-1.45z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- 2. 카테고리 -->
+          <div class="category-wrap">
+            <div class="category-box">
+              <a href="">
+                <span>커뮤니티</span>
+              </a>
+              <a href="">
+                <span>쇼핑</span>
+              </a>
+              <a href="">
+                <span>인테리어/생활</span>
+              </a>
+            </div>
+          </div>
+          <!-- 3. 서치 등등  -->
+          <div class="etc-wrap">
+            <!-- 3-1. 서치 -->
+            <div class="search-wrap">
+              <div class="search-box">
+                <div class="search">
+                  <span>돋</span>
+                  <input class="search-input" type="text" placeholder="통합검색" />
+                </div>
+              </div>
+            </div>
+            <!-- 3-2. 카트 -->
+            <a href="" class="cart-a">
+              <span>카트</span>
+            </a>
+            <!-- 3-3. 로그인 회원가입 -->
+            <div class="login-wrap">
+              로그인 회원가입
+              <div class="login-regist-box"></div>
+            </div>
+            <!-- 3-4. 글쓰기 -->
+            <div class="write-wrap">
+              <span class="write-box">
+                <button class="write-button">
+                  <span class="write-span">글쓰기</span>
+                  <span>^</span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div id="header">
+          <div class="forScript">
+            <div class="header-wrapper">
+              <div class="header-left">
+                <nav class="category-nav">
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">홈</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">추천</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">#채널</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">집들이</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">집사진</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">3D인테리어</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">살림수납</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">콜렉터블</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">홈스토랑</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">핫플레이스</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">육아</p>
+                      </div>
+                    </a>
+                  </span>
+                  <span class="category">
+                    <a href="" class="category-link">
+                      <div class="category-div">
+                        <p class="category-p">플랜테리어</p>
+                      </div>
+                    </a>
+                  </span>
+                </nav>
+              </div>
+              <div class="header-right">
+                <div class="chart-wrapper">
+                  <span class="chart-forScript">
+                    <div class="chart-box">
+                      <!-- ---- -->
+                      <div class="chart-textBox">
+                        <div class="chartText">
+                          <a href="">
+                            <div>
+                              <span>순위</span>
+                              <span>태그</span>
+                              <span>상품명</span>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- ----- -->
+                      <button>^</button>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <!-- 1. 메인 배너 -->
+        <div class="main-banner m-wr">
+          <div class="main-banner-in">
+            <!-- 배너 왼쪽 -->
+            <div class="left-banner">
+              <section>
+                <a href="">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/171023117560000842.jpg?w=2560&h=1536&c=c"
+                    alt=""
+                  />
+                </a>
+              </section>
+            </div>
+            <!-- 배너 오른쪽 -->
+            <div class="right-banner">
+              <section>
+                <a href="">
+                  <img src="nphocha.jpg" alt="">
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- 2. 카테고리 -->
+        <div class="main-category m-wr">
+          <div class="main-category-in">
+            <div class="category-box">
+              <a href="">
+                <img src="img/1.png" alt="">
+                <span>얼리버드</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="img/2.png" alt="">
+                <span>오늘의 딜</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/171151340329557503.png?w=288" alt="">
+                <span>집들이</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170184318298899959.png?w=288" alt="">
+                <span>행운출첵</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170736215082472666.png?w=288" alt="">
+                <span>챌린지참여</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/171151569572879643.png?w=288" alt="">
+                <span>크리에이터</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/170358029767805279.png?w=288" alt="">
+                <span>장보기</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198012024333402.png?w=288" alt="">
+                <span>빠른배송</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198022841390557.png?w=288" alt="">
+                <span>리모델링</span>
+              </a>
+            </div>
+            <div class="category-box">
+              <a href="">
+                <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/shortcut/home_feed_shortcut_sets/167198021046015480.png?w=288" alt="">
+                <span>쉬운이사</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- 3. 이런 사진 찾고있나요? -->
+        <div class="main-searchPhoto m-wr">
+          <!-- 3-1. 텍스트 -->
+          <div class="looking-text-box">
+
+            <div class="looking-titles-wrap">
+              <div class="looking-mainT">
+                <strong>이런 사진 찾고 있나요?</strong>
+              </div>
+              <div class="looking-subT">
+                <span>좋아하실 만한 인테리어 콘텐츠를 추천해드려요</span>
+              </div>
+            </div>
+
+            <div class="etcText-wrap">
+              <button>더보기</button>
+            </div>
+          </div>
+          <!-- 3-2. 사진목록  -->
+          <div class="photoList-wrapper">
+            <ul>
+              <li>
+                <div class="photoSome">
+                  <a href="">
+                    <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171318886951939967.jpeg?w=256&h=342&c=c" alt="">
+                    </a>
+                    <div class="util">
+                      <div class="profile-nickname">
+                       <div class="util-profileImage">
+                        <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/167443600541323235.jpeg?w=72" alt="">
+                       </div>
+                       <span>nickname</span>
+                      </div>
+                      <div class="bookmark-wrapper">
+                        <div>
+                        <button>북마크</button>
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          
+      
+
+
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+        <!-- 4. 오늘의 기획전 -->
+        <div class="main-event m-wr"></div>
+        <!-- 5. 베스트 -->
+        <div class="main-best m-wr"></div>
+      </div>
+      <footer></footer>
+    </div>
+  </body>
+</html>

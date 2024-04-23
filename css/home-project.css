@@ -1,0 +1,194 @@
+body{
+  word-break: keep-all;
+  word-wrap: break-word; 
+  letter-spacing: -0.3px;
+}
+*{box-sizing: border-box;}
+#wrapper {
+  padding-top: 40px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+.wrapper-in {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  background-color: skyblue;
+}
+/* 전체 사이즈 */
+
+.content{ 
+  display: flex; 
+  flex-direction: column; 
+  text-align: center;
+  justify-content: center;
+  background-color: beige; 
+
+  width: 100%;
+  max-width: 1920px;
+
+  
+} /* margin auto */
+
+.forgap{
+  padding: 0 60px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* 1. 검색 */
+.wrap-search{
+  padding: 32px 60px 40px; 
+  text-align: left;
+}
+
+.wrap-search h3{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #2F3438;
+  margin: 5px 0;
+}
+.wrap-search p{
+  font-size: 14px;
+  line-height: 18px;
+  color: #2F3438;
+  margin-bottom: 5px;
+}
+.search-box{
+  display: flex;
+  border: 1px solid #DADDE0;
+  border-radius: 4px;
+  padding: 8px 14px;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+/* 돋보기 */
+.search-dod{
+  display: inline-block;
+  font-size: 14px;
+
+}
+
+/* 태그 ---------------------------------------------------------------------- */
+
+
+.top-tag{
+  
+  display: flex;
+  position: relative;
+  padding: 10px 0;
+}
+.top-tag li{
+  margin-right: 4px;
+  padding: 0;
+}
+.tag-label-box {
+  position: relative;
+  border: 1px solid #DADDE0;
+  border-radius: 16px;
+  line-height: 0px;
+  padding-right: 12px;
+  padding-left: 12px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+
+}
+.arr{
+  margin-left: 1px;
+}
+.top-tag span{
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  white-space: nowrap;/* 줄바꿈 x */
+  color: #2f3433;
+
+
+}
+
+
+
+
+
+/* 컨텐츠 -------------------------------------------------------------------------------------*/
+
+.wrap-media{
+  background-color: rgb(212, 241, 212);
+  max-width: 1256px;
+  margin: 0 auto;
+}
+.box-media-relative{
+  /* position : relative */
+}
+
+.box-media-absolute{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  
+  /* 
+  position : absolute
+  top : 0px */
+
+  box-sizing: border-box;
+  padding-top: 0px; padding-bottom: 100px; margin-top: 0px; }
+
+  /* 여기부터 문제.. ```````````````````````````````` */
+.wrap-x3{ overflow-anchor: none; }
+.box-x3{width: 100%; display: flex; ;}
+
+.box-content{
+  /* 가로 33.3333% */
+  width: 33.3333%;
+}
+
+.box-content section{
+  padding: 0px 10px 40px;
+  outline: 0;
+}
+.a-block{
+  display: block;
+}
+
+/* 컨텐츠미디어영역 */
+.contentmedia{
+  text-align: left;
+}
+.contentmedia img{
+  border-radius: 4px;
+}
+.ccontent-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+  color: rgb(47, 52, 56);
+}
+
+/* 프로필영역 */
+.profile{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-top: 4px;
+}
+.img-profile{
+  margin-right: 6px;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+}
+.nickname{
+  font-size: 12px;
+    line-height: 20px;
+    color: rgb(47, 52, 56);
+}
