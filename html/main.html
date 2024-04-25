@@ -10,7 +10,7 @@
     <title>메인페이지 2트</title>
     <style>
      @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
-      body, button, input, footer, span, ul, li{
+      body, button, input, footer, span, ul, li, div, a{
         font-family: 'Noto Sans KR', sans-serif;
       }
       .horiz-line{
@@ -76,9 +76,9 @@
           <!-- 3. etc -->
           <div class="header1-right">
             <!-- 3-1. 서치박스 -->
-            <div class="wrap-search"><label for="" class="box-magnifier"><span class="icon-magnifier">돋</span><input type="text" placeholder="통합검색"></label></div>
+            <div class="wrap-search"><label for="" class="box-magnifier"><span class="icon-magnifier"><img src="../img/돋보기.png" alt=""></span><input type="text" placeholder="통합검색"></label></div>
             <!-- 3-2. 카트 -->
-            <div class="wrap-cart"><span class="cart">카트</span></div>
+            <div class="wrap-cart"><span class="cart"><img src="../img/cart.png" alt=""></span></div>
             <!-- 3-3. 등록 -->
             <div class="wrap-regist">
               <a href="">로그인</a>
@@ -102,97 +102,21 @@
             <div class="header-wrapper">
               <div class="header-left">
                 <nav class="category-nav">
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">홈</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">추천</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">#채널</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">집들이</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">집사진</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">3D인테리어</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">살림수납</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">콜렉터블</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">홈스토랑</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">핫플레이스</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">육아</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">플랜테리어</p>
-                      </div>
-                    </a>
-                  </span>
-                  <span class="category">
-                    <a href="" class="category-link">
-                      <div class="category-div">
-                        <p class="category-p">반려동물</p>
-                      </div>
-                    </a>
-                  </span>
+                  <ul>
+                    <li><a href="">홈</a></li>
+                    <li><a href="">추천</a></li>
+                    <li><a href="">#채널</a></li>
+                    <li><a href="">집들이</a></li>
+                    <li><a href="">집사진</a></li>
+                    <li><a href="">3D인테리어</a></li>
+                    <li><a href="">살림수납</a></li>
+                    <li><a href="">콜렉터블</a></li>
+                    <li><a href="">홈스토랑</a></li>
+                    <li><a href="">핫플레이스</a></li>
+                    <li><a href="">육아</a></li>
+                    <li><a href="">플랜테리어</a></li>
+                    <li><a href="">반려동물</a></li>
+                  </ul>
                 </nav>
               </div>
               <div class="header-right">
@@ -219,25 +143,27 @@
           <div class="main-banner-in">
             <!-- 배너 왼쪽 -->
             <div class="left-banner">
-              <section>
-                <a href="">
-                  <img
-                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/171023117560000842.jpg?w=2560&h=1536&c=c"
-                    alt=""
-                  />
-                </a>
-              </section>
+             <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/164992118988169161.jpeg?w=850&h=510&c=c" alt="">
+            <div class="banner-text">
+              <h2>봄이 지나기 전에 누려야 할 색감</h2>
+              <div class="box-banner-profile"><img src="../img/프로필6.png" alt=""><span>오늘의집 에디터</span></div>
+            </div>
             </div>
             <!-- 배너 오른쪽 -->
             <div class="right-banner">
-              <section>
-                <a href="">
-                  <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171352200424417995.png?w=360" alt="">
-                </a>
-              </section>
+             <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171352207979909991.png?w=360" alt="">
+             <div class="box-banner-count"><a href=""><span>8</span><span>/</span><span>18</span></div></a>
+             <!-- 오른쪽 배너 화살표  -->
+             <div class="banner-arr-left"><button>left</button></div>
+             <div class="banner-arr-right"><button>right</button></div>
+
             </div>
           </div>
         </div>
+
+
+
+
         <!-- 2. 카테고리 -->
         <div class="main-category m-wr">
           <div class="main-category-in">
@@ -326,13 +252,93 @@
           <!-- 3-2. 사진목록  -->
           <div class="photoList-wrapper">
             <ul class="ul-photoList">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-    
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(1).png" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필1.jpg" alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">
+                  <svg class="bookmark-fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.75H4C3.44772 2.75 3 3.19771 3 3.75V20.8228C3 21.1988 3.39948 21.4403 3.73242 21.2655L11.5352 17.169C11.8262 17.0162 12.1738 17.0162 12.4648 17.169L20.2676 21.2655C20.6005 21.4403 21 21.1988 21 20.8228V3.75C21 3.19772 20.5523 2.75 20 2.75Z" fill="#35C5F0"></path>
+                  </svg>
+                  <svg class="bookmark-blank" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_15409_67579)">
+                      <g filter="url(#filter0_d_15409_67579)">
+                        <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3ZM4 2.75H20C20.5523 2.75 21 3.19772 21 3.75V20.8228C21 21.1988 20.6005 21.4403 20.2676 21.2655L12.4648 17.169C12.1738 17.0162 11.8262 17.0162 11.5352 17.169L3.73242 21.2655C3.39948 21.4403 3 21.1988 3 20.8228V3.75C3 3.19771 3.44772 2.75 4 2.75Z" fill="white"></path>
+                        <path d="M4.3 4.05V19.4992L10.9309 16.018C11.6003 15.6666 12.3997 15.6666 13.0691 16.018L19.7 19.4992V4.05H4.3Z" fill="white" fill-opacity="0.5"></path></g></g><defs><filter id="filter0_d_15409_67579" x="-2" y="-0.25" width="28" height="28.5735" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset dy="2"></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feColorMatrix type="matrix" values="0 0 0 0 0.247059 0 0 0 0 0.278431 0 0 0 0 0.301961 0 0 0 0.15 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_15409_67579"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15409_67579" result="shape"></feBlend></filter><clipPath id="clip0_15409_67579"><rect width="24" height="24" fill="white"></rect></clipPath></defs></svg>
+                </span>
+              </li>
+         
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(2).png"" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필2.jpg"  alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">책</span>
+              </li>
+         
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(3).png" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필3.jpg"  alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">책</span>
+              </li>
+         
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(4).png" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필4.jpeg"  alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">책</span>
+              </li>
+         
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(5).png" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필5.jpg"  alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">책</span>
+              </li>
+         
+              <li>
+                <a href="">
+                <img class="pl-content-img" src="../img/이런사진(2).png" alt="">
+                </a>
+                <a href="" class="box-photo-profile">
+                    <div class="round-profile">
+                        <img src="../img/프로필6.png" alt="">
+                     </div>
+                     <span class="nickname">nickname</span>
+                </a>
+                <span class="bookmark">책</span>
+              </li>
+         
             </ul>
           </div>
         </div>
@@ -344,25 +350,32 @@
               <button>더보기</button>
             </div>
           </div>
-          <section>
+          <section class="gap">
             <div class="box-eventmedia">
-              <img src="../img/오늘의기획전1.png" alt="">
-              <div>전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
-              <div>오픈런딜</div>
+              <div class="box-event-photo"><img src="../img/기획전(1).png" alt=""></div>
+              <div class="event-productT">전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
+              <div class="event-productT-bold">오픈런딜</div>
             </div>
+
             <div class="box-eventmedia">
-              <img src="../img/오늘의기획전2.png" alt="">
-              <div>전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
-              <div>오직 여기서만, O!Goods</div>
+              <div class="box-event-photo"><img src="../img/기획전(2).png" alt=""></div>
+              <div class="event-productT">전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
+              <div class="event-productT-bold">오픈런딜</div>
             </div>
+
             <div class="box-eventmedia">
-              <img src="../img/오늘의기획전3.png" alt="">
-              <div>전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
-              <div>O원한 특급패스, 오늘의집 배송!</div>
+              <div class="box-event-photo"><img src="../img/기획전(3).png" alt=""></div>
+              <div class="event-productT">전상품 무료배송, 요일마다 바뀌는 파격특가 장보기 세일</div>
+              <div class="event-productT-bold">오픈런딜</div>
             </div>
+
             <div class="box-eventmedia event-add">
-              <div class="event-add-content">더보기</div>
+              <div class="event-add-content">
+                <div class="event-add-btn"><button>-></button></div>
+                <a href="">더보기</a>
+              </div>
             </div>
+
           </section>
           </div>
         </div>
@@ -407,36 +420,39 @@
             <!-- 5-2-2. 미디어 -->
             <div class="wrap-best-media">
 
-              
+           
+
               <div class="box-bestProduct">
-                <img src="../img/best1.png" alt="">
+                  <div class="box-best-images"><img src="../img/베스트(1).png" alt=""></div>
                   <div class="wrap-best-info">
-                  <div class="box-company-name">회사이름</div>
-                  <div class="box-bestTitle">베스트 상품명</div>
-                  <div class="box-number"><span>할인율</span><span>가격</span></div>
-                  <div class="box-review"></div>
+                  <div class="box-company-name"><a href="">회사이름</a></div>
+                  <div class="box-bestTitle"><a href="">베스트 상품명 </a></div>
+                  <div class="box-number"><span class="discount-t">34%</span><span class="price-t">299,900</span></div>
+                  <div class="box-review"><span>★</span><span>4.8</span><span>리뷰</span><span>15,909</span></div>
                   <div class="box-tags"><span>태그1</span><span>태그2</span></div>
               </div>
               </div>
+           
 
               <div class="box-bestProduct">
-                <img src="../img/best2.png" alt="">
+                  <div class="box-best-images"><img src="../img/베스트(2).png" alt=""></div>
                   <div class="wrap-best-info">
-                  <div class="box-company-name">회사이름</div>
-                  <div class="box-bestTitle">베스트 상품명</div>
-                  <div class="box-number"><span>할인율</span><span>가격</span></div>
-                  <div class="box-review"></div>
+                  <div class="box-company-name"><a href="">회사이름</a></div>
+                  <div class="box-bestTitle"><a href="">베스트 상품명 </a></div>
+                  <div class="box-number"><span class="discount-t">34%</span><span class="price-t">299,900</span></div>
+                  <div class="box-review"><span>★</span><span>4.8</span><span>리뷰</span><span>15,909</span></div>
                   <div class="box-tags"><span>태그1</span><span>태그2</span></div>
+                  </div>
               </div>
-              </div>
+           
 
               <div class="box-bestProduct">
-                <img src="../img/best3.png" alt="">
+                <div class="box-best-images"><img src="../img/베스트(3).png" alt=""></div>
                   <div class="wrap-best-info">
-                  <div class="box-company-name">회사이름</div>
-                  <div class="box-bestTitle">베스트 상품명</div>
-                  <div class="box-number"><span>할인율</span><span>가격</span></div>
-                  <div class="box-review"></div>
+                  <div class="box-company-name"><a href="">회사이름</a></div>
+                  <div class="box-bestTitle"><a href="">베스트 상품명 </a></div>
+                  <div class="box-number"><span class="discount-t">34%</span><span class="price-t">299,900</span></div>
+                  <div class="box-review"><span>★</span><span>4.8</span><span>리뷰</span><span>15,909</span></div>
                   <div class="box-tags"><span>태그1</span><span>태그2</span></div>
               </div>
               </div>
