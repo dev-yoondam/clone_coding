@@ -71,6 +71,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
 
@@ -101,6 +102,15 @@
   background-color: #fff;
   color: #424242;
 }
+
+.email-input-wrapper input:focus{
+  border: 1px solid #35c5f0;
+  box-shadow: 0 0 8px 0.5px #44c4eb95;
+  border-radius: 4px;
+  outline: none;
+}
+
+
 .golbang{
   padding: 4px;
   color: #dbdbdb;
@@ -111,8 +121,9 @@
 /* 셀렉트 ---  */
 .email-input-wrapper {
   position: relative;
-  width: 100%;
+  width: inherit;
 }
+
 .email-input-wrapper select{
   display: block;
   height: 40px;
@@ -122,17 +133,17 @@
   border: 1px solid #dbdbdb;
   color: #424242;
   line-height: 40px;
-
+  padding: 0 15px;
 }
 input::placeholder{
   padding: 5px;
   color: #b2b2b2;
 }
 
-select:optional{ /* 옵션 수정 */
+/* select:optional{ 
   padding: 4px;
   color: #7e7e7e;
-}
+} */
 option{
   font-weight: normal;
   display: block;
@@ -142,6 +153,7 @@ option{
 }
 
 .arr-button{
+  display: none;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -155,6 +167,7 @@ option{
 
 /* 3-2. 이메일 인증하기 버튼   */
 .email-button{
+  width: inherit;
   padding-top: 7px;
   margin-bottom: 30px;
 }
@@ -279,15 +292,16 @@ option{
 
 /* 체크박스 디자인 ------------------------------------ */
 .check [type = 'checkbox']{
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   background-color: #ffffff;
   border-radius: 4px;
   transition: 300ms;
   cursor: pointer;
   appearance: none;
+  border: 0.5px solid rgb(163, 163, 163);
 
-  &::before{
+  & :before{
     content: '';
     display: block;
     width: inherit; height: inherit; border-radius: inherit; 
@@ -299,6 +313,7 @@ option{
   &:checked{
     background-color: #35c5f0;
     border: 1px solid transparent;
+
   }
 
 /*   &:checked::before{
@@ -310,6 +325,7 @@ option{
 .check label{
   display: flex;
   align-items: center;
+
 }
 
 

@@ -560,6 +560,17 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   height: 15px;
   padding: 5px;
 }
+/* 북마크 채워진버전 아닌버전 */
+
+.bookmark-fill{
+  display: none;
+}
+.bookmark-blank{
+  display: block;
+}
+
+
+
 
 /* 4. 오늘의 기획전 ------------------------------------------------------------------------------------ */
 .wrap-eventTitle {
@@ -569,13 +580,15 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 .main-event section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
 /* 이벤트 상품 사진 ------------- */
 .gap {
   margin-bottom: 60px;
+}
+.gap a{
+  color: #2f3438;
 }
 
 .box-eventmedia {
@@ -607,8 +620,10 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 20px;
-
+  /* ellipsis 안먹음;;; */
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   display: block;
 }
 .event-productT-bold {
@@ -619,7 +634,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   width: 269px;
 }
 
-/* 더보기   */
+/* 더보기  ~~~~~~~` 0425 */
 
 .event-add {
   margin: 0;
@@ -646,10 +661,13 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   border: none;
   background-color: transparent;
 }
-.event-add-content a {
+.event-add-content button :focus{
+  background-color: #757575;
+}
+.a-event-add span {
   color: #212629;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 /* 5. 베스트  -------------------------------------------------------------------------- */
@@ -666,7 +684,9 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   list-style-type: none;
   overflow: hidden;
 }
-
+.box-best-category a{
+  color: #212629;
+}
 .box-best-category ul li {
   font-size: 13px;
   padding: 9px;
@@ -675,7 +695,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   background-color: #f7f9fa;
   white-space: nowrap;
 }
-.box-best-category ul li:hover {
+.box-best-category ul li:hover{
   background-color: #35c5f0;
   color: white;
 }
