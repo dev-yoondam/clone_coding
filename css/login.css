@@ -82,6 +82,7 @@ input::placeholder {
 }
 
 .login-button{
+  cursor: pointer;
   margin: 20px 0;
   display: inline-block;
   justify-content: center;
@@ -146,29 +147,104 @@ input::placeholder {
   color: #c2c8cc;
   font-size: 14px;
   line-height: 18px;
+  text-decoration: none;
 }
+/* 비회원 주문 조회하기 버튼 ----------------------------------------- */
 
 .other-wrapper{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #dbdbdb;
   margin-bottom: 80px;
 }
-.other-wrapper button{
+
+.btn-order{
+  cursor: pointer;
   background-color: transparent;
   border: none;
   color: #424242;
   font-size: 15px;
   border: 0;
-  margin: 0;
   padding: 0;
   line-height: 1.4;
+} 
+
+.btn-order:hover .wrap-order {
+  display: block; /* 보이게 함 */
 }
+
+.gap{
+  height: 20px;
+}
+.mar-b{
+  margin-bottom: 10px;
+}
+.wrap-order{
+  width: 100%;
+  display: none; /* 안 보이게 함  */
+}
+.box-order{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 4px;
+  height: 50px;
+  padding: 0px;
+}
+
+.box-order input{
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 13px 15px 14px;
+}
+.box-order input:focus{
+  border: 1px solid #35c5f0;
+  box-shadow: 0 0 8px 0.5px #44c4eb95;
+  border-radius: 4px;
+  outline: none;
+}
+.box-order input::placeholder{
+}
+
+
+
+
+
+
+
+
+
+/* 버튼 디자인 */
+.button-design{
+  cursor: pointer;
+  width: 100%;
+  height: 52px;
+  background-color: #35c5f0;
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  border: 0;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 footer{
   width: 100%;
@@ -184,4 +260,5 @@ footer span{
 footer a{
   color: #757575;
   font-size: 10px;
+  text-decoration: none;
 }

@@ -361,45 +361,72 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
 
 
-/* 오른쪽 배너 화살표 */
-.banner-arr-left{
-  width: 48px; height: 48px;
+/*배너 화살표 ---  */
+.banner-arr{
+  display: flex;
+  align-items: center;
+}
+.right-banner-relative{
+  position: relative;
+}
+/* right-banner가 relative  */
+/* 왼쪽 배너 화살표 */
+.banner-arr .arr-left{
   position: absolute;
-  top: 217px;
-  left: 0px;
+  top: 242px;
+  left: -5px;
+  display: block;
   z-index: 10;
 }
-.banner-arr-left button{
+
+.banner-arr .arr-left button {
+  background-color: white;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
-  height: inherit;
-  width: inherit;
-  border: 0;
-  box-shadow: 2px 2px 12px 1px rgba(128, 128, 128, 0.142);
-  display: none;/* 가려지게 */
-  transition: all 0.1s linear;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15);
+
+  transform: scaleX(-1);
+  display: flex;
+  align-items: center;
 }
-.banner-arr-left:hover button{
-  display: block;
+.banner-arr .arr-left img{
+  height: 70%;
+  transform: translate(3px);
 }
 
-.banner-arr-right{
-  width: 48px; height: 48px;
+/* 오른쪽 배너 화살표 */
+.banner-arr .arr-right{
   position: absolute;
-  top: 217px;
-  right: 0px;
-}
-.banner-arr-right button{
-  border-radius: 100%;
-  height: inherit;
-  width: inherit;
-  border: 0;
-  box-shadow: 2px 2px 12px 1px rgba(128, 128, 128, 0.142);
-  display: none;/* 가려지게 */
-  transition: all 0.1s linear;
-}
-.banner-arr-right:hover button{
+  top: 242px;
+  right: -21px;
   display: block;
+  z-index: 10;
 }
+
+.banner-arr .arr-right button {
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15);
+
+  display: flex;
+  align-items: center;
+}
+.banner-arr .arr-right img{
+  height: 70%;
+  transform: translate(3px);
+}
+
+
+
+
+
 
 /* 메인 카테고리  */
 .main-category-in {
@@ -450,7 +477,9 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   margin-top: 4px;
   margin-bottom: 5px;
 }
+
 .looking-mainT strong {
+  cursor: pointer;
   overflow: hidden;
   display: inline-block;
   letter-spacing: -0.3px;
@@ -461,7 +490,9 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-
+.looking-mainT strong:hover{
+  color: #929292;
+}
 .looking-subT span {
   overflow: hidden;
   display: inline-block;
@@ -492,6 +523,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 .photoList-wrapper {
   width: 1140;
   display: flex;
+  position: relative; /*  이거!!!!!!!!!!! */
 }
 .ul-photoList {
   display: flex;
@@ -568,6 +600,61 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 .bookmark-blank{
   display: block;
 }
+
+
+/* 사진리스트  좌 우 화살표  */
+.photoList-btn{
+  display: flex;
+  align-items: center;
+}
+.photoList-btn .btn-left-photoList{
+  position: absolute;
+  top: 95px;
+  left: -21px;
+}
+.photoList-btn .btn-left-photoList button {
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15);
+
+  transform: scaleX(-1);
+  display: flex;
+  align-items: center;
+}
+
+.photoList-btn .btn-left-photoList img{
+  height: 70%;
+  transform: translate(3px);
+}
+
+/* 오른쪽  */
+.photoList-btn .btn-right-photoList{
+  position: absolute;
+  top: 95px;
+  right: -21px;
+}
+.photoList-btn .btn-right-photoList button {
+  background-color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(63, 71, 77, 0.15);
+
+  display: flex;
+  align-items: center;
+}
+.photoList-btn .btn-right-photoList img{
+  height: 70%;
+  transform: translate(3px);
+}
+
+
 
 
 
@@ -656,18 +743,23 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   height: 40px;
   border-radius: 100%;
   background-color: #e2e6e9;
+  margin-bottom: 10px;
 }
 .event-add-content button {
+  cursor: pointer;
   border: none;
   background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
 }
-.event-add-content button :focus{
-  background-color: #757575;
+.event-add-content button:hover{
+  background-color: #c4c4c4;
+
 }
 .a-event-add span {
   color: #212629;
   font-size: 14px;
-  margin-top: 20px;
 }
 
 /* 5. 베스트  -------------------------------------------------------------------------- */

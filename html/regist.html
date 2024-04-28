@@ -31,7 +31,7 @@
   <body>
     <div id="wrapper">
       <section class="wrapper-in">
-        <a href="">
+        <a href="main.html">
           <svg width="88" height="31" viewBox="0 0 88 31" preserveAspectRatio="xMidYMid meet">
             <g fill="none" fill-rule="evenodd">
               <path
@@ -130,13 +130,12 @@
           <!-- 3. 컨텐츠 입력 폼 -->
           <form class="info-form">
             <!-- 3-1. 이메일 -->
-            <!-- 이거 화살표 버튼 수정해야함 -->
             <div class="email-wrapper">
               <label for="email">이메일</label>
-              <div class="email-input-wrapper">
-                <span><input type="text" placeholder="이메일" id="email"/></span>
-                <span class="golbang"> @ </span>
-                <span>
+              <div class="wrap-email">
+                <div class="box-email-input"><input type="text" placeholder="이메일" id=""></div>
+                <div class="box-email-golbang"><span>@</span></div>
+                <div class="box-email-select">
                   <select name="email">
                     <option selected value disabled>선택해주세요</option>
                     <option>naver.com</option>
@@ -149,15 +148,14 @@
                     <option>icloud.com</option>
                     <option>직접입력</option>
                   </select>
-                </span>
+                </div>
                 <button class="arr-button">
                   <svg
                     class="icon"
                     width="10"
                     height="10"
                     style="fill: currentColor"
-                    preserveAspectRatio="xMidYMid meet"
-                  >
+                    preserveAspectRatio="xMidYMid meet">
                     <path fill-rule="evenodd" d="M0 3l5 5 5-5z"></path>
                   </svg>
                 </button>
@@ -200,6 +198,7 @@
               <label for="">약관동의</label>
               <div class="agreeFormWrap">
                 <div class="agreeBox">
+
                   <div class="check1 check">
                     <label>
                       <input type="checkbox" name="" id="check ch1">
@@ -207,19 +206,20 @@
                       <span class="subSpan">선택항목에 대한 동의 포함</span>
                   </label>
                  </div>
+
                  <hr>
                  <div class="check2 check">
                   <label>
-                  <input type="checkbox" name="" id="check">
-                  <span class="sub-mainSpan">만 14세 이상입니다</span>
-                  <span class="sub-subSpan">(필수)</span>
+                      <input type="checkbox" name="" id="check">
+                      <span class="sub-mainSpan">만 14세 이상입니다</span>
+                      <span class="sub-subSpan">(필수)</span>
                   </label>
                  </div>
                  <div class="check3 mar check">
                   <label>
-                  <input type="checkbox" name="" id="check">
-                  <span class="sub-mainSpan">이용약관</span>
-                  <span class="sub-subSpan">(필수)</span>
+                      <input type="checkbox" name="" id="check">
+                      <span class="sub-mainSpan">이용약관</span>
+                      <span class="sub-subSpan">(필수)</span>
                   </label>
                   <a class="check-aTag" href="">></a>
                 </div>
@@ -253,7 +253,14 @@
 
             <!-- 3-7. 로봇이 아닙니다 -->
             <div class="rc-anchor-container mar">
-              로봇이 아닙니다
+              <label class="box-notrobot">
+                <input type="checkbox" name="" id="">
+                <span>로봇이 아닙니다</span>
+              </label>
+              <div class="robot-logo-box">
+                <div>reCAPTCHA</div>
+                <span>개인정보 보호 - 약관</span>
+              </div>
             </div>
 
             
