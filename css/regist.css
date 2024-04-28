@@ -361,12 +361,8 @@ input::placeholder{
   justify-content: space-between;
   border: none;
   background-color: #e9e9e9;
-  width: 100%;
   height: 78px;
   border-radius: 4px;
-}
-.box-notrobot{
-  background-color: pink;
 }
 
 
