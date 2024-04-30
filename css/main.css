@@ -73,7 +73,7 @@
 .header1-right {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -287,6 +287,7 @@
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .left-banner img{
   height: 100%;
@@ -328,11 +329,12 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 .right-banner{
   width: 270px;
   height: inherit;
-  background-color: pink;
+  background-color: rgb(195, 195, 195);
   margin-left: 20px;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .right-banner img{
   height: 100%;
@@ -368,6 +370,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
 .right-banner-relative{
   position: relative;
+  height: inherit;
 }
 /* right-banner가 relative  */
 /* 왼쪽 배너 화살표 */
@@ -780,6 +783,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   color: #212629;
 }
 .box-best-category ul li {
+  cursor: pointer;
   font-size: 13px;
   padding: 9px;
   margin-right: 5px;
@@ -787,9 +791,10 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   background-color: #f7f9fa;
   white-space: nowrap;
 }
+
 .box-best-category ul li:hover{
-  background-color: #35c5f0;
   color: white;
+  background-color: #35c5f0;
 }
 
 .box-bestProduct {
@@ -798,6 +803,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
 
 .box-best-images{
+  cursor: pointer;
   width: 365px;
   height: 365px;
   overflow: hidden;
