@@ -39,7 +39,9 @@ body{
   margin-bottom: 10px;
   width: 300px;
 }
-.id{
+/* 이메일 */
+.box-email-input{
+  width: inherit;
   border-radius: 4px 4px 0 0;
   border: 1px solid #dbdbdb;
   background-color: #fff;
@@ -47,34 +49,52 @@ body{
   box-sizing: border-box;
   line-height: 21px;
   height: 50px;
+}
+
+.id{
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
   margin: 0;
   padding: 15px;
 }
-.id:focus{
-  border: 1px solid #35c5f0;
+ .id:focus{
+  /* border: 1px solid #35c5f0;
   box-shadow: 0 0 8px 0.5px #44c4eb95;
-  border-radius: 4px;
-  outline: none;
+  border-radius: 4px; */
+  outline: none; 
 }
 
-.pw{
+
+/* 비밀번호 */
+.box-pw-input{
+  width: inherit;
   border-radius: 0 0 4px 4px;
-  margin-top: -1px;
   border: 1px solid #dbdbdb;
   background-color: #fff;
   color: #000;
   box-sizing: border-box;
   line-height: 21px;
   height: 50px;
+}
+
+.pw{
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
   margin: 0;
   padding: 15px;
 }
 .pw:focus{
-  border: 1px solid #35c5f0;
+/*   border: 1px solid #35c5f0;
   box-shadow: 0 0 8px 0.5px #44c4eb95;
-  border-radius: 4px;
+  border-radius: 4px; */
   outline: none;
 }
+
+
 input::placeholder {
   padding: 13px 15px 14px 0px;
   font-size: 15px;
@@ -101,6 +121,11 @@ input::placeholder {
    border-color: #35c5f0;
    color: #fff;
 }
+.login-button:hover{
+  background-color: rgb(15, 171, 218)
+}
+
+
 
 /* 비밀번호 재설정 / 회원가입 */
 .re-regi{

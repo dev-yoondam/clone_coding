@@ -76,6 +76,66 @@
   justify-content: flex-end;
   align-items: center;
 }
+.wrap-write {
+  position: relative;
+}
+
+/* 글쓰기 드롭다운        */
+
+.dropdown-write {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: -120px;
+  z-index: 50;
+  width: 325px;
+  height: 372px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #2f343853;
+  /* 트랜지션  */
+  transition: 0.2s ease 0s;
+}
+
+.wrap-dd-write {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.wrap-dd-write a {
+  padding: 15px;
+  display: flex;
+}
+
+.box-dd-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.box-dd-text {
+  margin-left: 12px;
+
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  width: auto;
+}
+
+.dd-title {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #212629;
+}
+
+.dd-sub {
+  margin: 4px 0px 0px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgb(130, 140, 148);
+}
 
 /* 3-1. 서치박스 */
 .wrap-search {
@@ -95,10 +155,10 @@
 .icon-magnifier {
   color: #828c94;
   display: inline-block;
-  width: 20px; height: 20px;
-
+  width: 20px;
+  height: 20px;
 }
-.icon-magnifier img{
+.icon-magnifier img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -128,7 +188,7 @@
   border-radius: 4px;
   overflow: hidden;
 }
-.cart  img{
+.cart img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -177,6 +237,7 @@
   display: flex;
   align-items: center;
   padding: 0px;
+  height: 100%;
 }
 
 .header-left {
@@ -189,8 +250,8 @@
 .header-right {
   display: block;
   margin-left: 10px;
+  position: relative;
 
-  /*  */
 }
 
 /* header left --------*/
@@ -222,14 +283,31 @@
 }
 
 /* 차트  ~~~~~~~~~~~~~~~~~~~~~~~~~` */
+
 .chart-right {
-  background-color: white;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), white);
   margin-left: 10px;
+  height: 50px;
 }
 .chart-wrapper {
   width: 200px;
+  height: inherit;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+/* 다운 세브론 */
+.down-btn {
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.down-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .box-chart {
@@ -238,23 +316,138 @@
   white-space: nowrap;
 }
 
-/* --- */
+/* 나머지 차트 3요소 -------------- */
 .chart-number {
-  font-weight: 1000;
+  font-weight: 700;
 }
 .chart-tag {
   font-size: 12px;
   font-weight: 700;
   color: #2fa0c2;
-  padding: 0px 2px;
+  padding: 0px 5px;
 }
 .btn-chart {
   display: block;
   color: #828c94;
   border: none;
   background-color: transparent;
-  padding: 6px;
+  width: 15px;
+  height: 15px;
 }
+.btn-chart img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+/* 이거 누르면 뚜는거  */
+
+/* 드롭다운 첫번째꺼  */
+/* header-right 에 position : relative 있음  */
+.dropdown-first{
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  z-index: 5;
+  border-radius: 4px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #2f343853;
+  width: 330px;
+
+}
+.box-dd-first{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.box-dd-first a{
+  padding: 13px 10px;
+  color: #212629;
+  font-weight: 700;
+  font-size: 17px;
+}
+.box-dd-first a:hover{
+  color:#35c5f0;
+}
+
+
+/* 드롭다운 두번째꺼 : 인기순위  */
+
+.dropdown-second{
+  display: none;
+  position: absolute;
+  z-index: 5;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #2f343853;
+  top: -28px;
+  right: -37px;
+  width: 290px;
+  height: 510px;
+  background-color: rgb(255, 255, 255);
+}
+.box-dd-second{
+  padding: 10px;
+}
+.box-charts-title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 20px;
+}
+.box-charts{
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+}
+.box-charts:hover{
+  background-color: rgba(245, 246, 247, 0.476);
+}
+.chart{
+  font-weight: bold;
+  margin-right: 10px;
+}
+.chart-icon{
+  margin-right: 10px;
+  color: #FF7777;
+  font-weight: bold;
+  font-size: 12px;
+}
+.charts-name{
+  color: #212629;
+}
+
+/* 쉐브론 */
+.box-shabron{
+  width: 18px;
+  height: 18px;
+  
+}
+
+.box-shabron img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1) rotate(-90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 본문 -======================================================================= */
 
@@ -264,6 +457,7 @@
 
 /* 1. 메인배너 */
 .main-banner {
+  position: relative;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -273,14 +467,12 @@
   border-radius: 4px;
   padding: 0;
 }
-.main-banner-in{
+.main-banner-in {
   display: flex;
 }
 
-
-
 /* 1-1 왼쪽배너 */
-.left-banner{
+.left-banner {
   width: 847px;
   height: inherit;
   background-color: gray;
@@ -289,63 +481,98 @@
   overflow: hidden;
   cursor: pointer;
 }
-.left-banner img{
+.left-banner img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: all 0.1s linear; /* 은근하게 커지기 */
-
 }
-.left-banner img:hover{
-transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
+.left-banner img:hover {
+  transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
-.banner-text{
+.banner-text {
   position: absolute;
   top: 420px;
   left: 30px;
   color: white;
 }
-.banner-text h2{
+.banner-text h2 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.box-banner-profile{
+.box-banner-profile {
   display: flex;
   align-items: center;
 }
-.box-banner-profile img{
+.box-banner-profile img {
   width: 24px;
   height: 24px;
   border-radius: 100%;
   margin-right: 5px;
- }
- .box-banner-profile span{
+}
+.box-banner-profile span {
   font-size: 13px;
- }
+}
 
-/* 1-2 오른쪽배너       */
-.right-banner{
+/* 1-2 오른쪽배너    ==================================   */
+
+
+.right-banner-relative {
+  position: relative;
+  height: 508px;
   width: 270px;
-  height: inherit;
-  background-color: rgb(195, 195, 195);
   margin-left: 20px;
   border-radius: 4px;
-  position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-.right-banner img{
+
+/* ul - absolute*/
+.right-banner{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  /* 나머지 */
+  width: 270px;
   height: 100%;
-  width: 100%;
+  border-radius: 4px;
+}
+
+.right-slide-img{
+  border-radius: 4;
+  background-color: pink;
+  width: 270px;
+  height: 508px;
   object-fit: cover;
   transition: all 0.1s linear; /* 은근하게 커지기 */
 }
-.right-banner img:hover{
+.right-banner img:hover {
   transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
-.box-banner-count{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-banner-count {
   display: flex;
   align-items: center;
   padding: 2px 10px;
@@ -356,30 +583,27 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   background-color: rgba(128, 128, 128, 0.544);
   border-radius: 25px;
 }
-.box-banner-count span{
+.box-banner-count span {
   color: white;
   font-size: 13px;
   font-weight: 600;
+  line-height: 20px;
 }
 
-
 /*배너 화살표 ---  */
-.banner-arr{
+.banner-arr {
   display: flex;
   align-items: center;
 }
-.right-banner-relative{
-  position: relative;
-  height: inherit;
-}
+
 /* right-banner가 relative  */
 /* 왼쪽 배너 화살표 */
-.banner-arr .arr-left{
+.banner-arr .arr-left {
   position: absolute;
   top: 242px;
-  left: -5px;
+  right: 239px;
   display: block;
-  z-index: 10;
+  z-index: 3;
 }
 
 .banner-arr .arr-left button {
@@ -395,18 +619,18 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   display: flex;
   align-items: center;
 }
-.banner-arr .arr-left img{
+.banner-arr .arr-left img {
   height: 70%;
   transform: translate(3px);
 }
 
 /* 오른쪽 배너 화살표 */
-.banner-arr .arr-right{
+.banner-arr .arr-right {
   position: absolute;
   top: 242px;
   right: -21px;
   display: block;
-  z-index: 10;
+  z-index: 3;
 }
 
 .banner-arr .arr-right button {
@@ -421,15 +645,10 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   display: flex;
   align-items: center;
 }
-.banner-arr .arr-right img{
+.banner-arr .arr-right img {
   height: 70%;
   transform: translate(3px);
 }
-
-
-
-
-
 
 /* 메인 카테고리  */
 .main-category-in {
@@ -493,7 +712,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.looking-mainT strong:hover{
+.looking-mainT strong:hover {
   color: #929292;
 }
 .looking-subT span {
@@ -538,10 +757,9 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   height: 230px;
   background-color: gray;
   border-radius: 4px;
-  margin: 0 12px 0 0 ;
+  margin: 0 12px 0 0;
   overflow: hidden;
 }
-
 
 .pl-content-img {
   width: 100%;
@@ -549,9 +767,8 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   object-fit: cover;
   transition: all 0.1s linear; /* 은근하게 커지기 */
 }
-.pl-content-img:hover{
+.pl-content-img:hover {
   transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
-
 }
 /* --- 안에 들어가는 닉네임, 책갈피  ---------------------------------------*/
 .box-photo-profile {
@@ -588,6 +805,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   text-overflow: ellipsis;
 }
 .bookmark {
+  cursor: pointer;
   position: absolute;
   top: 195px;
   left: 136px;
@@ -597,20 +815,19 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
 /* 북마크 채워진버전 아닌버전 */
 
-.bookmark-fill{
+.bookmark-fill {
   display: none;
 }
-.bookmark-blank{
+.bookmark-blank {
   display: block;
 }
 
-
 /* 사진리스트  좌 우 화살표  */
-.photoList-btn{
+.photoList-btn {
   display: flex;
   align-items: center;
 }
-.photoList-btn .btn-left-photoList{
+.photoList-btn .btn-left-photoList {
   position: absolute;
   top: 95px;
   left: -21px;
@@ -629,13 +846,13 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   align-items: center;
 }
 
-.photoList-btn .btn-left-photoList img{
+.photoList-btn .btn-left-photoList img {
   height: 70%;
   transform: translate(3px);
 }
 
 /* 오른쪽  */
-.photoList-btn .btn-right-photoList{
+.photoList-btn .btn-right-photoList {
   position: absolute;
   top: 95px;
   right: -21px;
@@ -652,15 +869,10 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   display: flex;
   align-items: center;
 }
-.photoList-btn .btn-right-photoList img{
+.photoList-btn .btn-right-photoList img {
   height: 70%;
   transform: translate(3px);
 }
-
-
-
-
-
 
 /* 4. 오늘의 기획전 ------------------------------------------------------------------------------------ */
 .wrap-eventTitle {
@@ -677,7 +889,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 .gap {
   margin-bottom: 60px;
 }
-.gap a{
+.gap a {
   color: #2f3438;
 }
 
@@ -700,7 +912,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   object-fit: cover;
   transition: all 0.1s linear;
 }
-.box-event-photo img:hover{
+.box-event-photo img:hover {
   transform: scale(1.05, 1.05);
 }
 
@@ -756,9 +968,8 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   height: 40px;
   border-radius: 100%;
 }
-.event-add-content button:hover{
+.event-add-content button:hover {
   background-color: #c4c4c4;
-
 }
 .a-event-add span {
   color: #212629;
@@ -766,7 +977,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
 
 /* 5. 베스트  -------------------------------------------------------------------------- */
-.wrap-best-tag{
+.wrap-best-tag {
   margin-bottom: 20px;
 }
 .wrap-bestText {
@@ -779,7 +990,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   list-style-type: none;
   overflow: hidden;
 }
-.box-best-category a{
+.box-best-category a {
   color: #212629;
 }
 .box-best-category ul li {
@@ -792,7 +1003,7 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   white-space: nowrap;
 }
 
-.box-best-category ul li:hover{
+.box-best-category ul li:hover {
   color: white;
   background-color: #35c5f0;
 }
@@ -802,20 +1013,20 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   height: 482px;
 }
 
-.box-best-images{
+.box-best-images {
   cursor: pointer;
   width: 365px;
   height: 365px;
   overflow: hidden;
 }
 
-.box-best-images img{
+.box-best-images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.1s linear;
 }
-.box-best-images img:hover{
+.box-best-images img:hover {
   transform: scale(1.08, 1.08);
 }
 
@@ -826,20 +1037,18 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   margin-bottom: 60px;
 }
 
-
-
 /* 베스트 상품 텍스트 -------------------------- */
 .box-company-name {
   margin: 3px 0;
 }
-.box-company-name a{
+.box-company-name a {
   color: #757575;
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
 }
 
-.box-bestTitle a{
+.box-bestTitle a {
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -847,26 +1056,25 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   overflow: hidden;
 }
 
-.box-number{
+.box-number {
   margin: 3px 0;
   display: flex;
   align-items: center;
 }
-.discount-t{
+.discount-t {
   font-size: 17px;
   font-weight: 700;
   line-height: 23px;
   color: #35c5f0;
   margin-right: 4px;
 }
-.price-t{
+.price-t {
   font-size: 17px;
   font-weight: bold;
   color: black;
-
 }
 
-.box-review{
+.box-review {
   display: flex;
   gap: 2px;
   font-size: 12px;
@@ -874,18 +1082,18 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   font-weight: 700;
   margin-bottom: 10px;
 }
-.box-review >span:nth-child(1){
+.box-review > span:nth-child(1) {
   color: #35c5f0;
 }
-.box-review > span:nth-child(3){
+.box-review > span:nth-child(3) {
   color: #929292;
 }
-.box-review > span:nth-child(4){
+.box-review > span:nth-child(4) {
   color: #929292;
 }
 
 /* 베스트상품 택그 */
-.box-tag{
+.box-tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -899,28 +1107,6 @@ transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
   background-color: rgb(234, 117, 117);
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer ------------------------------------------------------------------------------- */
 footer {
@@ -995,13 +1181,6 @@ footer {
   margin: 0px 50px;
 }
 
-
-
-
-
-
-
-
 /* 푸터2 ---------------- */
 .wrap-footer2 {
   width: 120px;
@@ -1009,7 +1188,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 .wrap-footer2 a {
   display: inline-block;

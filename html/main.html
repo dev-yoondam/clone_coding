@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 
     <title>메인페이지</title>
+    <script defer src="../js/main.js"></script>
     <style>
      @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
       body, button, input, footer, span, ul, li, div, a{
@@ -90,7 +91,56 @@
             <!-- 3-4. 글쓰기 -->
             <div class="wrap-write">
               <button class="btn-write"><span class="spn-write1">글쓰기</span><span class="spn-write2">></span></button>
-              
+              <!-- JS.글쓰기 클릭시  드롭다운 -->
+              <div class="dropdown-write">
+                <div class="wrap-dd-write">
+                  <a href="">
+                    <div class="box-dd-icon">
+                      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36"><rect x="6.54" y="3.59" width="27" height="29" rx="2.5" transform="rotate(4 6.54 3.6)" fill="#DBDBDB" stroke="#000" stroke-linejoin="round"></rect><rect x="2.5" y="1.5" width="27" height="29" rx="2.5" fill="#fff" stroke="#000" stroke-linejoin="round"></rect><rect x="5" y="4" width="22" height="22" rx="1" fill="#FFE2C7"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M14 7l5 .45v3.5l-5-.45V7zm0 4.5V15l5 .45v-3.5l-5-.45zm6 .55v3.5l5 .45v-3.5l-5-.45zm5-.55V8l-5-.45v3.5l5 .45z" fill="#fff"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5 19l22 2v7L5 26v-7z" fill="#E6A87C"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5 3.45h5v16l-5 4v-20z" fill="#F1C8A3"></path></svg>
+                    </div>
+                    <div class="box-dd-text">
+                      <div class="dd-title">사진/동영상 올리기</div>
+                      <div class="dd-sub">우리 집의 공간과 나의 일상을 기록해보세요.</div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="box-dd-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="none" fill-rule="evenodd"><path d="M0 0h36v36H0z"></path><path fill="#FFF6E6" d="M27.2 29.31H4.8V14.38h22.4"></path><path fill="#EDE2CD" d="M27.2 17.18H4.8v-2.8h22.4"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M4.8 29.31V14.38h22.4v14.93H4.8z"></path><path fill="#FFF" d="M16 19.05a4.67 4.67 0 014.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0116 19.05z"></path><path fill="#fff" d="M16 19.05a4.67 4.67 0 014.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0116 19.05z"></path><path stroke="#000" d="M16 19.05a4.67 4.67 0 014.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0116 19.05z"></path><path fill="#FBDEC1" d="M2.94 14.38a.9.9 0 01-.81-1.3l3.25-6.6a.9.9 0 01.8-.5h19.64c.34 0 .65.2.8.5l3.25 6.6a.9.9 0 01-.8 1.3H2.93z"></path><path fill="#E9C39D" d="M2.94 14.38a.9.9 0 01-.81-1.3l.74-1.5h26.26l.74 1.5a.9.9 0 01-.8 1.3H2.92z"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M2.94 14.38a.9.9 0 01-.81-1.3l3.25-6.6a.9.9 0 01.8-.5h19.64c.34 0 .65.2.8.5h0l3.25 6.6a.9.9 0 01-.8 1.3h0H2.93z"></path><g transform="translate(26 9)"><path fill="#fff" d="M0 5h8.07v12H0z"></path><path fill="#ffdb92" d="M0 0h8v4H0z"></path><path d="M8.5 17.43H-.52 8.5L4 23.8l-4.52-6.37H8.5" fill="#fff6e6"></path><path d="M8.5 1v0A1.49 1.49 0 007-.5H1v0A1.5 1.5 0 00-.5 1l-.02 16.43L4 23.8l4.5-6.37z" stroke="#000"></path><path fill="#000" d="M4 23l2-2H2z"></path><rect width="6" height="2" x="-14" y="3" stroke="#000" rx="1" transform="rotate(-90)" ry="1"></rect><rect width="5" height="1" x="-13.5" y="3.5" fill="#ffdb92" rx=".5" transform="rotate(-90)" ry=".5"></rect><path fill="#000" d="M0 4h8v1H0z" opacity=".9"></path><path d="M-.52 17.43H8.5" stroke="#000"></path></g><path fill="#000" d="M30 32l2-2h-4z"></path></g></svg>
+                    </div>
+                    <div class="box-dd-text">
+                      <div class="dd-title">집들이 글쓰기</div>
+                      <div class="dd-sub">집에 관한 이야기를 글로 작성해 보세요.</div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="box-dd-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="none" fill-rule="evenodd"><path d="M0 0h36v36H0z"></path><path fill="#EDEDED" d="M17 10h2v22h-2z"></path><path fill="#FFF" d="M3 10.2c3.65-1.07 6.98-1.07 10 0h10.16c2.98-1 6.26-1 9.84 0v21c-5.79-1.62-10.79-1.29-15 1-4.21-2.37-9.21-2.7-15-1z"></path><path fill="#EDEDED" d="M16.5 15h3v16c-.66.8-1.16 1.2-1.5 1.2-.34 0-.84-.4-1.5-1.2V15z"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M3 10.2c3.65-1.07 6.98-1.07 10 0h10.16c2.98-1 6.26-1 9.84 0h0v1.97h0V31.2c-5.79-1.62-10.79-1.29-15 1-4.21-2.37-9.21-2.7-15-1z"></path><g transform="translate(11 3)"><path fill="#FFDB92" stroke="#000" d="M7 0a7 7 0 013 13.33V17H4v-3.67A7 7 0 017 0z"></path><path stroke="#000" stroke-linecap="square" d="M7 15.68V8.5"></path><circle cx="7" cy="7.5" r="1.5" fill="#000"></circle><path fill="#FFF" stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M3 16h8v7H3z"></path><path stroke="#000" stroke-linecap="square" d="M3 18.5h8m-8 2h8"></path></g></g></svg>
+                    </div>
+                    <div class="box-dd-text">
+                      <div class="dd-title">노하우 글쓰기</div>
+                      <div class="dd-sub">다양한 인테리어 노하우를 공유해 주세요.</div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="box-dd-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="none" fill-rule="evenodd"><path d="M0 0h36v36H0z"></path><g stroke-linejoin="round" transform="translate(2 3)"><rect width="4" height="8" x="3" y="21" fill="#FFB787" stroke="#000" rx="2"></rect><rect fill="#FFE2C7" width="24" height="25" rx="3"></rect><rect fill="#ffe2c7" width="24" height="25" rx="3"></rect><rect stroke="#000" width="24" height="25" rx="3" stroke-width="1.2"></rect><rect width="6" height="3" x="9" y="5" fill="#DB9F77" stroke="#FFF" rx="1.5"></rect><rect width="6" height="3" x="9" y="17" fill="#DB9F77" stroke="#FFF" rx="1.5"></rect><path fill="#FFDB92" stroke="#EDC29B" d="M1.5 12.5h21"></path></g><path fill="#35C5F0" d="M26.25 31.53l-3.7 1.32a1 1 0 01-1.34-.97l.1-3.93a.99.99 0 00-.2-.64l-2.4-3.11a1 1 0 01.51-1.57l3.77-1.12a1 1 0 00.55-.39l2.22-3.24a1 1 0 011.65 0l2.22 3.24a1 1 0 00.55.4l3.77 1.1a1 1 0 01.5 1.58l-2.4 3.11a1 1 0 00-.2.64l.11 3.93a1 1 0 01-1.33.97l-3.71-1.32a1 1 0 00-.67 0z"></path><path fill="#9AE2F7" d="M27.15 17.61a1 1 0 01.26.26l2.22 3.25c.06.09.13.16.22.23l-8.59 8.58.06-1.98a.99.99 0 00-.21-.64l-2.4-3.11a1 1 0 01.51-1.57l3.77-1.12a1 1 0 00.55-.39l2.22-3.24a1 1 0 011.39-.26z"></path><path stroke="#000" d="M26.29 30.85l-3.31 1.17a.9.9 0 01-1.2-.86l.1-3.51c0-.2-.06-.4-.18-.57l-2.14-2.78a.9.9 0 01.45-1.4l3.37-.99a.9.9 0 00.48-.35l1.99-2.9a.9.9 0 011.47 0l1.99 2.9c.11.17.28.3.48.35l3.37 1a.9.9 0 01.45 1.4l-2.14 2.77a.89.89 0 00-.18.57l.1 3.5a.9.9 0 01-1.2.87l-3.3-1.17a.9.9 0 00-.6 0z" stroke-width="1.2"></path></g></svg>
+                    </div>
+                    <div class="box-dd-text">
+                      <div class="dd-title">상품 리뷰 쓰기</div>
+                      <div class="dd-sub">상품 리뷰를 작성하고 포인트도 받아 보세요.</div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="box-dd-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="none" fill-rule="evenodd"><path d="M0 0h36v36H0z"></path><path fill="#FFDB92" d="M13.75 3.52h1.9a8.1 8.1 0 018.1 8.1v1.9H5.65v-1.9a8.1 8.1 0 018.1-8.1z"></path><path fill="#FFDB92" d="M12 3h5v2h-5z"></path><path fill="#FFF" d="M12.2 23.92h5.4a7.2 7.2 0 017.2 7.2v2.8H5v-2.8a7.2 7.2 0 017.2-7.2z"></path><path fill="#EDEDED" fill-opacity=".14" d="M17.6 23.92c1.2 0 2.33.3 3.32.8a10.84 10.84 0 01-6.19 1.78c-2.28 0-4.38-.57-6.04-1.67a7.15 7.15 0 013.51-.91h5.4z"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M5 33.59V30.9a6.59 6.59 0 015.47-6.37"></path><path d="M10.64 24.6v3.19" fill-rule="nonzero" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path><path fill="#B1C0CB" fill-rule="nonzero" stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M8.9 33.92l.98-6H21.9l.98 6"></path><path fill="#FFF6E6" fill-rule="nonzero" d="M22.04 14.29c.31.9.48 2.3.48 3.31 0 4.65-3.49 7.2-7.79 7.2s-7.78-2.55-7.78-7.2c0-1.02.17-2.4.48-3.31"></path><path fill="#EDE2CD" fill-rule="nonzero" d="M22.04 14.29c.16.48.29 1.09.37 1.71H7.06c.08-.62.2-1.23.37-1.71h14.6z"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M22.04 14.29c.31.9.48 2.3.48 3.31 0 4.65-3.49 7.2-7.79 7.2s-7.78-2.55-7.78-7.2c0-1.02.17-2.4.48-3.31"></path><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M16.29 20.9c-.23.46-.84.79-1.56.79-.72 0-1.33-.33-1.56-.78"></path><path d="M12 17.55V17m5.46.55V17" fill-rule="nonzero" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"></path><path fill="#EFC570" d="M9.5 5l2.88 4.72v-5.9zM19.94 5l-2.89 4.72v-5.9z"></path><g stroke="#000" stroke-linecap="round"><path stroke-linejoin="round" d="M5.75 11.76c0-4.08 2.9-7.45 6.63-7.94v-.3c0-.55.43-1 .95-1h2.84c.53 0 .95.45.95 1v.3c3.74.5 6.63 3.86 6.63 7.94"></path><path d="M12.38 5.52v-2c0-.55.43-1 .95-1h2.84c.53 0 .95.45.95 1v2"></path><path fill="#F5F5F5" fill-rule="nonzero" d="M4.2 14.02h20.7"></path></g><g><path fill="#35C5F0" d="M26.25 33.1l-3.71 1.31a1 1 0 01-1.34-.97l.11-3.93a.99.99 0 00-.2-.64l-2.4-3.11a1 1 0 01.5-1.57L23 23.07a1 1 0 00.54-.39l2.23-3.24a1 1 0 011.65 0l2.22 3.24a1 1 0 00.54.4l3.78 1.1a1 1 0 01.5 1.58l-2.4 3.11a1 1 0 00-.2.64l.1 3.93a1 1 0 01-1.33.97l-3.7-1.32a1 1 0 00-.67 0z"></path><path fill="#9AE2F7" d="M27.15 19.18a1 1 0 01.26.26l2.22 3.24c.06.09.13.16.21.23l-8.58 8.58.05-1.98a.99.99 0 00-.2-.64l-2.4-3.11a1 1 0 01.5-1.57L23 23.07a1 1 0 00.54-.39l2.23-3.24a1 1 0 011.39-.26z"></path><path stroke="#000" d="M26.25 33.1l-3.71 1.31a1 1 0 01-1.34-.97l.11-3.93a.99.99 0 00-.2-.64l-2.4-3.11a1 1 0 01.5-1.57L23 23.07a1 1 0 00.54-.39l2.23-3.24a1 1 0 011.65 0l2.22 3.24a1 1 0 00.54.4l3.78 1.1a1 1 0 01.5 1.58l-2.4 3.11a1 1 0 00-.2.64l.1 3.93a1 1 0 01-1.33.97l-3.7-1.32a1 1 0 00-.67 0z"></path></g></g></svg>
+                    </div>
+                    <div class="box-dd-text">
+                      <div class="dd-title">시공 전문가 리뷰쓰기</div>
+                      <div class="dd-sub">시공 전문가 리뷰를 작성하고 포인트도 받아 보세요.</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -121,12 +171,64 @@
               </div>
               <div class="header-right">
                 <div class="chart-wrapper">
+                  <div class="down-btn"><img src="../img/down.png" alt=""></div>
                   <div class="box-chart">
                     <span class="chart-number">1</span>
                     <span class="chart-tag">new</span>
                     <span class="chart-name">상품명</span>
                   </div>
-                  <button class="btn-chart">화살표</button>
+                  <button class="btn-chart"><img src="../img/down.png" alt=""></button>
+                </div>
+                <!-- 드롭다운 1 -->
+                <div class="dropdown-first">
+                  <div class="box-dd-first">
+                    <a href="#">핫플레이스</a>
+                    <a href="#">육아</a>
+                    <a href="#">플랜테리어</a>
+                    <a href="#">반려동물</a>
+                    <a href="#">캠핑</a>
+                    <a href="#">취미</a>
+                    <a href="#">이벤트</a>
+                  </div>
+                </div>
+                <!-- 드롭다운 2 -->
+                <div class="dropdown-second">
+                  <div class="box-dd-second">
+                    
+                    <div class="box-charts-title">
+                        <span class="charts-title">인기 검색어</span><span class="box-shabron"><img src="../img/얇은쉐브론.png" alt=""></span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">1</span><span class="chart-icon">표시</span><span class="charts-name">첫번째 상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">2</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">3</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">4</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">5</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">6</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">7</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">8</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">9</span><span class="chart-icon">표시</span><span class="charts-name">상품명</span>
+                    </div>
+                    <div class="box-charts">
+                      <span class="chart">10</span><span class="chart-icon">표시</span><span class="charts-name">마지막 상품명</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -151,17 +253,20 @@
             </div>
             <!-- 배너 오른쪽 -->
             <div class="right-banner-relative">
-            <div class="right-banner">
-             <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171352207979909991.png?w=360" alt="">
-             <div class="box-banner-count"><a href=""><span>8</span><span>/</span><span>18</span></div></a>
-            </div>
-             <!-- 배너 화살표  -->
-             <div class="banner-arr">
-              <div class="arr-left"><button><img src="../img/오른쪽꺽쇠_2.png" alt=""></button></div>
-              <div  class="arr-right"><button><img src="../img/오른쪽꺽쇠_2.png" alt=""></button></div>
-            </div>
-
-            </div>
+              <ul class="right-banner">
+                <li><img src="../img/banner1_1.png" alt="" class="right-slide-img"></li>
+                <li><img src="../img/banner1_2.png" alt="" class="right-slide-img"></li>
+                <li><img src="../img/banner1_3.png" alt="" class="right-slide-img"></li>
+                <li><img src="../img/banner1_4.png" alt="" class="right-slide-img"></li>
+                <li><img src="../img/banner1_5.png" alt="" class="right-slide-img"></li>
+              </ul>
+               <div class="box-banner-count"><a href=""><span class="current-count"></span><span>/</span><span class="all-count"></span></div></a>
+              </div>
+              <!-- 배너 화살표  -->
+              <div class="banner-arr">
+               <div class="arr-left"><button><img src="../img/오른쪽꺽쇠_2.png" alt=""></button></div>
+               <div  class="arr-right"><button><img src="../img/오른쪽꺽쇠_2.png" alt=""></button></div>
+             </div>
           </div>
         </div>
 

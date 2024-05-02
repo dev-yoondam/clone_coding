@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <title>회원가입</title>
+    <script defer src="../js/regist.js"></script>
     <style>
       @font-face {
         font-family: 'Noto Sans KR';
@@ -131,9 +132,9 @@
           <form class="info-form">
             <!-- 3-1. 이메일 -->
             <div class="email-wrapper">
-              <label for="email">이메일</label>
+              <label for="email" class="title-email">이메일</label>
               <div class="wrap-email">
-                <div class="box-email-input"><input type="text" placeholder="이메일" id=""></div>
+                <div class="box-email-input" onclick="email()"><input type="text" placeholder="이메일" id="email"></div>
                 <div class="box-email-golbang"><span>@</span></div>
                 <div class="box-email-select">
                   <select name="email">
@@ -160,6 +161,7 @@
                   </svg>
                 </button>
               </div>
+              <p class="warning-email warning"></p>
             </div>
 
             <!-- 3-2. 이메일 인증하기 버튼 -->
@@ -169,28 +171,32 @@
 
             <!-- 3-3. 비밀번호 -->
             <div class="passwordWrap Pwrapper">
-              <label for="">비밀번호</label>
+              <label for="" class="title-pw">비밀번호</label>
               <div class="notice-text">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</div>
               <div class="inputForm">
-                <input type="text" placeholder="비밀번호">
+                <input onclick="pwCheck()" type="password" placeholder="비밀번호" name="password" class="pw-input" autocomplete="off">
               </div>
+              <p class="warning-pw warning"></p>
+
             </div>
 
             <!-- 3-4. 비밀번호 확인 -->
             <div class="passwordCheckWrap Pwrapper">
-              <label for="">비밀번호 확인</label>
+              <label for="" class="pw-check-title">비밀번호 확인</label>
               <div class="inputForm">
-                <input type="text" placeholder="비밀번호">
+                <input type="password" placeholder="비밀번호" class="pw-check-input" autocomplete="off">
               </div>
+              <p class="warning-pw-check warning"></p>
             </div>
 
             <!-- 3-5. 닉네임 -->
             <div class="nicknameWrap Pwrapper">
-              <label for="">닉네임</label>
+              <label for="" class="title-nickname">닉네임</label>
               <div class="notice-text">다른 유저와 겹치지 않도록 입력해주세요. (2~20자)</div>
               <div class="inputForm">
-                <input type="text" placeholder="별명(2~20자)">
+                <input onclick="nickName()" type="text" placeholder="별명(2~20자)" class="nickname-input">
               </div>
+              <p class="warning-nick warning"></p>
             </div>
 
             <!-- 3-6. 약관동의 -->
@@ -201,7 +207,7 @@
 
                   <div class="check1 check">
                     <label>
-                      <input type="checkbox" name="" id="check ch1">
+                      <input type="checkbox" class="all" name="selectAll" id="check ch1" value="all">
                       <span class="mainSpan">전체동의</span>
                       <span class="subSpan">선택항목에 대한 동의 포함</span>
                   </label>
@@ -210,14 +216,14 @@
                  <hr>
                  <div class="check2 check">
                   <label>
-                      <input type="checkbox" name="" id="check">
+                      <input type="checkbox" class="etc" >
                       <span class="sub-mainSpan">만 14세 이상입니다</span>
                       <span class="sub-subSpan">(필수)</span>
                   </label>
                  </div>
                  <div class="check3 mar check">
                   <label>
-                      <input type="checkbox" name="" id="check">
+                      <input type="checkbox" class="etc" name="" >
                       <span class="sub-mainSpan">이용약관</span>
                       <span class="sub-subSpan">(필수)</span>
                   </label>
@@ -225,7 +231,7 @@
                 </div>
                 <div class="check4 mar check">
                   <label>
-                  <input type="checkbox" name="" id="check">
+                  <input type="checkbox" class="etc" name="" >
                   <span class="sub-mainSpan">개인정보수집 및 이용동의</span>
                   <span class="sub-subSpan">(필수)</span>
                   </label>
@@ -233,7 +239,7 @@
                 </div>
                 <div class="check5 mar check">
                   <label for="">
-                  <input type="checkbox" name="" id="check">
+                  <input type="checkbox" class="etc" name="">
                   <span class="sub-mainSpan">개인정보 마케팅 활용 동의</span>
                   <span class="sub-subSpan">(선택)</span>
                   </label>
@@ -241,7 +247,7 @@
                  </div>
                  <div class="check6 mar check">
                   <label >
-                  <input type="checkbox" name="" id="check">
+                  <input type="checkbox" class="etc" name="">
                   <span class="sub-mainSpan">이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신</span>
                   <span class="sub-subSpan">(선택)</span>
                 </label>
