@@ -141,6 +141,7 @@
 .wrap-search {
   display: flex;
   margin-right: 10px;
+  position: relative;
 }
 .box-magnifier {
   display: inline-flex;
@@ -174,6 +175,60 @@
 .box-magnifier input::placeholder {
   font-size: 15px;
   color: rgb(203, 203, 203);
+}
+
+/* 검색 드롭다운  */
+.dropdown-search {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  width: calc(100% - 7px);
+  max-height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #2f343853;
+  z-index: 5;
+}
+.dd-search-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8px 10px;
+  font-size: 13px;
+  color: rgb(130, 140, 148);
+}
+.dd-search-title button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 11px;
+  color: rgb(130, 140, 148);
+}
+.box-recent-search {
+  width: 100%;
+}
+
+.box-recent-search ul {
+  padding: 3px 0px 15px 0;
+  width: 100%;
+}
+
+.box-recent-search li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  font-size: 13px;
+  color: #2f3438;
+  cursor: pointer;
+}
+.box-recent-search li:hover {
+  background-color: #f0f0f068;
+}
+.box-recent-search button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 /* 3-2. 카트 아이콘  */
@@ -251,7 +306,6 @@
   display: block;
   margin-left: 10px;
   position: relative;
-
 }
 
 /* header left --------*/
@@ -344,7 +398,7 @@
 
 /* 드롭다운 첫번째꺼  */
 /* header-right 에 position : relative 있음  */
-.dropdown-first{
+.dropdown-first {
   display: none;
   position: absolute;
   top: 40px;
@@ -355,27 +409,25 @@
   border-radius: 8px;
   box-shadow: 0 0 5px #2f343853;
   width: 330px;
-
 }
-.box-dd-first{
+.box-dd-first {
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-.box-dd-first a{
+.box-dd-first a {
   padding: 13px 10px;
   color: #212629;
   font-weight: 700;
   font-size: 17px;
 }
-.box-dd-first a:hover{
-  color:#35c5f0;
+.box-dd-first a:hover {
+  color: #35c5f0;
 }
-
 
 /* 드롭다운 두번째꺼 : 인기순위  */
 
-.dropdown-second{
+.dropdown-second {
   display: none;
   position: absolute;
   z-index: 5;
@@ -387,67 +439,51 @@
   height: 510px;
   background-color: rgb(255, 255, 255);
 }
-.box-dd-second{
+.box-dd-second {
   padding: 10px;
 }
-.box-charts-title{
+.box-charts-title {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
   font-weight: bold;
   padding: 14px 20px;
 }
-.box-charts{
+.box-charts {
   padding: 14px 20px;
   display: flex;
   align-items: center;
 }
-.box-charts:hover{
+.box-charts:hover {
   background-color: rgba(245, 246, 247, 0.476);
 }
-.chart{
+.chart {
   font-weight: bold;
   margin-right: 10px;
 }
-.chart-icon{
+.chart-icon {
   margin-right: 10px;
-  color: #FF7777;
+  color: #ff7777;
   font-weight: bold;
   font-size: 12px;
 }
-.charts-name{
+.charts-name {
   color: #212629;
 }
 
 /* 쉐브론 */
-.box-shabron{
+.box-shabron {
   width: 18px;
   height: 18px;
-  
 }
 
-.box-shabron img{
+.box-shabron img {
+  opacity: 50%;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transform: scaleX(-1) rotate(-90deg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* 본문 -======================================================================= */
 
@@ -518,7 +554,6 @@
 
 /* 1-2 오른쪽배너    ==================================   */
 
-
 .right-banner-relative {
   position: relative;
   height: 508px;
@@ -530,7 +565,7 @@
 }
 
 /* ul - absolute*/
-.right-banner{
+.right-banner {
   display: flex;
   position: absolute;
   top: 0;
@@ -541,7 +576,7 @@
   border-radius: 4px;
 }
 
-.right-slide-img{
+.right-slide-img {
   border-radius: 4;
   background-color: pink;
   width: 270px;
@@ -552,25 +587,6 @@
 .right-banner img:hover {
   transform: scale(1.05, 1.05); /* 마우스 올리면 확대 */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .box-banner-count {
   display: flex;

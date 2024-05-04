@@ -18,22 +18,20 @@ let nicknameStatus = 0;
 let checkPwStatus = 0;
 let statusCnt = 0;
 
-
-/* 1. 이메일 디자인 JS ----------------------------------------------------------------------- */
+/* 1. 이메일 ----------------------------------------------------------------------- */
 function email() {
   /* 포커스 */
   emailInput.addEventListener('click', () => {
     const text = document.getElementById('email').value;
 
-     if(emailStatus < 1 ){
+    if (emailStatus < 1) {
       emailStatus = 10;
       emailInput.setAttribute('style', correctShadow + transition);
-    }else if(emailStatus >= 1 && !text){
+    } else if (emailStatus >= 1 && !text) {
       emailStatus++;
       console.log(statusCnt);
       emailInput.setAttribute('style', warningShadow + warningBorder + transition);
-    } ;
-
+    }
   });
 
   /* 포커스 아웃  */
@@ -62,13 +60,12 @@ function email() {
         'background-color : #fff; border-color : #35c5f0; color : #35c5f0'
       );
     }
-
   });
 } // email() 끝
 
 email();
 
-/* 2. 비밀번호 JS --------------------------------------------------------------------------- */
+/* 2. 비밀번호 --------------------------------------------------------------------------- */
 const pwInput = document.querySelector('.pw-input');
 const pwWarning = document.querySelector('.warning-pw');
 const pwTitle = document.querySelector('.title-pw');
@@ -78,15 +75,14 @@ function pw() {
   // 클릭시
 
   pwInput.addEventListener('click', () => {
-    if(pwStatus < 1 ){
+    if (pwStatus < 1) {
       pwStatus = 10;
       pwInput.setAttribute('style', correctShadow + transition);
-    }else if(pwStatus >= 1 && !pwInput.value){
+    } else if (pwStatus >= 1 && !pwInput.value) {
       pwStatus++;
       console.log(pwStatus);
-      pwInput.setAttribute('style', warningShadow + warningBorder +transition);
-    } ;
-
+      pwInput.setAttribute('style', warningShadow + warningBorder + transition);
+    }
   });
 
   pwInput.addEventListener('focusout', () => {
@@ -115,13 +111,13 @@ function isMatch(password1, password2) {
 
 function pwCheck() {
   checkPwInput.addEventListener('click', () => {
-    if(checkPwStatus < 1 ){
+    if (checkPwStatus < 1) {
       checkPwStatus = 10;
       checkPwInput.setAttribute('style', correctShadow + transition);
-    }else if(checkPwStatus >= 1 && !checkPwInput.value){
+    } else if (checkPwStatus >= 1 && !checkPwInput.value) {
       checkPwStatus++;
       checkPwInput.setAttribute('style', warningShadow + warningBorder + transition);
-    } 
+    }
   });
 
   checkPwInput.addEventListener('focusout', () => {
@@ -157,13 +153,13 @@ const nicknameWarning = document.querySelector('.warning-nick');
 
 function nickName() {
   nicknameInput.addEventListener('click', () => {
-    if(statusCnt < 1 ){
+    if (statusCnt < 1) {
       statusCnt = 10;
-      nicknameInput.setAttribute('style', correctShadow +transition);
-    }else if(statusCnt >= 1 && !nicknameInput.value){
+      nicknameInput.setAttribute('style', correctShadow + transition);
+    } else if (statusCnt >= 1 && !nicknameInput.value) {
       statusCnt++;
       nicknameInput.setAttribute('style', warningShadow + warningBorder + transition);
-    }else if(nicknameInput.value > 2){
+    } else if (nicknameInput.value > 2) {
       nicknameInput.setAttribute('style', correctShadow + transition);
     }
   });
